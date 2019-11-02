@@ -1,0 +1,450 @@
+<!DOCTYPE HTML>
+<!--
+	Epilogue by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Forest Cover In India</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		
+		
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header" class="alt">
+				<div id="nav-wrapper"> 
+				<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li class="dropdown"><a>Forest cover Reports</a><div class="dropdown-content">
+							<a href="#">2005</a>
+							<a href="#">2006</a>
+							<a href="#">2007</a>
+							<a href="#">2008</a>
+							<a href="#">2009</a>
+							<a href="#">2010</a>
+							<a href="#">2011</a>
+						  </div></li>
+							<li><a href = "index.html">Home</a></li>
+						
+						<li><a href="maps2.html">Maps</a></li>
+						<li class="active"><a href="data.html">Get Data</a></li>
+						<li class="active"><a href="prediction.html">Regression</a></li>
+					</ul>
+				</nav>
+				
+				
+			</div>
+			<p>REPORT<br/>Analysis based on physiographic divisions of India
+			</p>
+			</header>
+
+		<!-- Wrapper -->
+		<div>
+			<div id="leftsidebar">
+						<section>
+							<header>
+								<h2 class="image">Choose YEAR</h2>
+								<form>
+								<select class="dropdown" id = "year" size = "7" style = "position:absolute;height: 200px;width:200px" autofocus>
+								
+								  <option value="2007">2007</option>
+								  <option value="2008">2008</option>
+								  <option value="2009">2009</option>
+								  <option value="2010">2010</option>
+								  <option value="2011">2011</option>
+								  <option value="2012">2012</option>
+								  <option value="2013">2013</option>
+								</select>
+								</form>
+								</form>
+							</header>
+						</section>
+							<section>
+							<header>
+								<h2 class="image">Choose REGION</h2>
+								<form>
+								<select class="dropdown" id = "region" size = "7" style = "position:absolute;height: 200px;width:200px">
+								  <option value="Northernmountains">Northern Mountains</option>
+								  <option value="Easternplains">Eastern Plains</option>
+								  <option value="Westernplains">Western Plains</option>
+								  <option value="Northernplains">Northern Plains</option>
+								  <option value="Centralhighlands">Central Highlands</option>
+								  <option value="Deccanplateau">Deccan Plateau</option>
+								  <option value="Coastal">Coastal</option>
+								</select>
+								</form>
+							</header>
+						</section>						
+							
+			</div>
+			<div>
+			<section class="centrebar">
+						
+						<h2>GRAPH</h2>
+						<img id ="fvstgraphs"src="" alt="" />
+						
+			</section>
+			<section class="centrebar">
+						<h2>CORRELATION</h2>
+						<img id ="fvstgraphscor"src= "" alt="" />
+						
+			</section><br/>
+			<section id="conclu"><p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p></section>
+			</div>
+			
+			</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script type = "text/javascript">
+				var a = document.getElementById("year")
+				a.onclick = yearfn
+				var b
+				var i = document.getElementById("fvstgraphs")
+				var i2 = document.getElementById("fvstgraphscor")
+				function yearfn()
+				{
+					if(a.value == 2007)
+					{
+						i.src = "1tt.png"
+						i2.src = "Yearwise Forestvstemp/2007corel.png"
+						
+					}
+					else if(a.value == 2008)
+					{
+						i.src = "2tt.png"
+						i2.src = "Yearwise Forestvstemp/2008corel.png"
+					}
+					else if(a.value == 2009)
+					{
+						i.src = "3tt.png"
+						i2.src = "Yearwise Forestvstemp/2009corel.png"
+					}
+					else if(a.value == 2010)
+					{
+						i.src = "4tt.png"
+						i2.src = "Yearwise Forestvstemp/2010corel.png"
+					}
+					else if(a.value == 2011)
+					{
+						i.src = "5tt.png"
+						i2.src = "Yearwise Forestvstemp/2011corel.png"
+					}
+					else if(a.value == 2012)
+					{
+						i.src = "6tt.png"
+						i2.src = "Yearwise Forestvstemp/2012corel.png"
+					}
+					else if(a.value == 2013)
+					{
+						i.src = "7tt.png"
+						i2.src = "Yearwise Forestvstemp/2013corel.png"
+						
+					}
+					b = document.getElementById("region")
+					b.onclick = regionfn
+				}
+				function regionfn()
+				{
+					if(a.value == 2007)
+					{
+
+						if(b.value == "Northernmountains")
+						{
+							i.src = "1t.png"
+							i2.src = "NM2007t.png"
+						}
+						else if(b.value == "Easternplains")
+						{
+							i.src = "8t.png"
+							i2.src = "EP2007t.png"
+						}
+						else if(b.value == "Westernplains")
+						{
+							i.src = "15t.png"
+							i2.src = "WP2007t.png"
+						}
+						else if(b.value == "Northernplains")
+						{
+							i.src = "22t.png"
+							i2.src = "NP2007t.png"
+						}
+						else if(b.value == "Centralhighlands")
+						{
+							i.src = "29t.png"
+							i2.src = "CH2007t.png"
+						}
+						else if(b.value == "Deccanplateau")
+						{
+							i.src = "36t.png"
+							i2.src = "DP2007t.png"
+						}
+						else if(b.value == "Coastal")
+						{
+							i.src = "43t.png"
+							i2.src = "CO2007t.png"
+						}
+						
+						
+					}
+					else if(a.value == 2008)
+					{
+				
+						if(b.value == "Northernmountains")
+						{
+							i.src = "2t.png"
+							i2.src = "NM2008t.png"
+						}
+						else if(b.value == "Easternplains")
+						{
+							i.src = "9t.png"
+							i2.src = "EP2008t.png"
+						}
+						else if(b.value == "Westernplains")
+						{
+							i.src = "16t.png"
+							i2.src = "WP2008t.png"
+						}
+						else if(b.value == "Northernplains")
+						{
+							i.src = "23t.png"
+							i2.src = "NP2008t.png"
+						}
+						else if(b.value == "Centralhighlands")
+						{
+							i.src = "30t.png"
+							i2.src = "CH2008t.png"
+						}
+						else if(b.value == "Deccanplateau")
+						{
+							i.src = "37t.png"
+							i2.src = "DP2008t.png"
+						}
+						else if(b.value == "Coastal")
+						{
+							i.src = "44t.png"
+							i2.src = "CO2008t.png"
+							
+						}
+						
+						
+					}
+					else if(a.value == 2009)
+					{
+						
+						if(b.value == "Northernmountains")
+						{
+							i.src = "3t.png"
+							i2.src = "NM2009t.png"
+						}
+						else if(b.value == "Easternplains")
+						{
+							i.src = "10t.png"
+							i2.src = "EP2009t.png"
+						}
+						else if(b.value == "Westernplains")
+						{
+							i.src = "17t.png"
+							i2.src = "WP2009t.png"
+						}
+						else if(b.value == "Northernplains")
+						{
+							i.src = "24t.png"
+							i2.src = "NP2009t.png"
+						}
+						else if(b.value == "Centralhighlands")
+						{
+							i.src = "31t.png"
+							i2.src = "CH2009t.png"
+						}
+						else if(b.value == "Deccanplateau")
+						{
+							i.src = "38t.png"
+							i2.src = "DP2009t.png"
+						}
+						else if(b.value == "Coastal")
+						{
+							i.src = "45t.png"
+							i2.src = "CO2009t.png"
+						}
+						
+						
+					}
+					else if(a.value == 2010)
+					{
+					
+						if(b.value == "Northernmountains")
+						{
+							i.src = "4t.png"
+							i2.src = "NM2010t.png"
+						}
+						else if(b.value == "Easternplains")
+						{
+							i.src = "11t.png"
+							i2.src = "EP2010t.png"
+						}
+						else if(b.value == "Westernplains")
+						{
+							i.src = "18t.png"
+							i2.src = "WP2010t.png"
+						}
+						else if(b.value == "Northernplains")
+						{
+							i.src = "25t.png"
+							i2.src = "NP2010t.png"
+						}
+						else if(b.value == "Centralhighlands")
+						{
+							i.src = "32t.png"
+							i2.src = "CH2010t.png"
+						}
+						else if(b.value == "Deccanplateau")
+						{
+							i.src = "39t.png"
+							i2.src = "DP2010t.png"
+						}
+						else if(b.value == "Coastal")
+						{
+							i.src = "46t.png"
+							i2.src = "CO2010t.png"
+						}
+						
+						
+					}
+					else if(a.value == 2011)
+					{
+					
+						if(b.value == "Northernmountains")
+						{
+							i.src = "5t.png"
+							i2.src = "NM2011t.png"
+						}
+						else if(b.value == "Easternplains")
+						{
+							i.src = "12t.png"
+							i2.src = "EP2011t.png"
+						}
+						else if(b.value == "Westernplains")
+						{
+							i.src = "19t.png"
+							i2.src = "WP2011t.png"
+						}
+						else if(b.value == "Northernplains")
+						{
+							i.src = "26t.png"
+							i2.src = "NP2011t.png"
+						}
+						else if(b.value == "Centralhighlands")
+						{
+							i.src = "33t.png"
+							i2.src = "CH2011t.png"
+						}
+						else if(b.value == "Deccanplateau")
+						{
+							i.src = "40t.png"
+							i2.src = "DP2011t.png"
+						}
+						else if(b.value == "Coastal")
+						{
+							i.src = "47t.png"
+							i2.src = "CO2011t.png"
+						}
+						
+						
+					}
+					else if(a.value == 2012)
+					{
+					
+						if(b.value == "Northernmountains")
+						{
+							i.src = "6t.png"
+							i2.src = "NM2012t.png"
+						}
+						else if(b.value == "Easternplains")
+						{
+							i.src == "13t.png"
+							i2.src = "EP2012t.png"
+						}
+						else if(b.value == "Westernplains")
+						{
+							i.src = "20t.png"
+							i2.src = "WP2012t.png"
+						}
+						else if(b.value == "Northernplains")
+						{
+							i.src = "27t.png"
+							i2.src = "NP2012t.png"
+						}
+						else if(b.value == "Centralhighlands")
+						{
+							i.src = "34t.png"
+							i2.src = "CH2012t.png"
+						}
+						else if(b.value == "Deccanplateau")
+						{
+							i.src = "41t.png"
+							i2.src = "DP2012t.png"
+						}
+						else if(b.value == "Coastal")
+						{
+							i.src = "48t.png"
+							i2.src = "CO2012t.png"
+						}
+						
+						
+					}
+					else if(a.value == 2013)
+					{
+
+						if(b.value == "Northernmountains")
+						{
+							i.src = "7t.png"
+							i2.src = "NM2013t.png"
+						}
+						else if(b.value == "Easternplains")
+						{
+							i.src = "14t.png"
+							i2.src = "EP2013t.png"
+						}
+						else if(b.value == "Westernplains")
+						{
+							i.src = "21t.png"
+							i2.src = "WP2013t.png"
+						}
+						else if(b.value == "Northernplains")
+						{
+							i.src = "28t.png"
+							i2.src = "NP2013t.png"
+						}
+						else if(b.value == "Centralhighlands")
+						{
+							i.src = "35t.png"
+							i2.src = "CH2013t.png"
+						}
+						else if(b.value == "Deccanplateau")
+						{
+							i.src = "42t.png"
+							i2.src = "DP2013t.png"
+						}
+						else if(b.value == "Coastal")
+						{
+							i.src = "49t.png"
+							i2.src = "CO2013t.png"
+						}
+						
+						
+					}
+					
+				}
+			</script>
+
+	</body>
+</html>

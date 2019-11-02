@@ -1,0 +1,492 @@
+<!DOCTYPE HTML>
+<!--
+	Epilogue by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Forest Cover In India</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		
+		
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header" class="alt">
+				<div id="nav-wrapper"> 
+				<!-- Nav -->
+				<nav id="nav">
+					<ul>
+													<li><a href = "pred.html">Prediction</a></li>
+
+							<li><a href = "index.html">Home</a></li>
+						
+						<li><a href="maps.html">Maps</a></li>
+						<li class="active"><a href="data.html">Get Data</a></li>
+						<li class="active"><a href="prediction.html">Prediction</a></li>
+					</ul>
+				</nav>
+				
+				
+			</div>
+			<p>REPORT<br/>Analysis based on physiographic divisions of India
+			</p>
+			</header>
+
+		<!-- Wrapper -->
+		<div>
+			<div id="leftsidebar">
+						<section>
+							<header>
+								<h2 class="image">Choose YEAR</h2>
+								<form>
+								<select class="dropdown" id = "year" size = "7" style = "position:absolute;height: 200px;width:200px" autofocus>
+								
+								  <option value="2007">2007</option>
+								  <option value="2008">2008</option>
+								  <option value="2009">2009</option>
+								  <option value="2010">2010</option>
+								  <option value="2011">2011</option>
+								  <option value="2012">2012</option>
+								  <option value="2013">2013</option>
+								</select>
+								</form>
+								</form>
+							</header>
+						</section>
+							<section>
+							<header>
+								<h2 class="image">Choose REGION</h2>
+								<form>
+								<select class="dropdown" id = "region" size = "7" style = "position:absolute;height: 200px;width:200px">
+								  <option value="Northernmountains">Northern Mountains</option>
+								  <option value="Easternplains">Eastern Plains</option>
+								  <option value="Westernplains">Western Plains</option>
+								  <option value="Northernplains">Northern Plains</option>
+								  <option value="Centralhighlands">Central Highlands</option>
+								  <option value="Deccanplateau">Deccan Plateau</option>
+								  <option value="Coastal">Coastal</option>
+								</select>
+								</form>
+							</header>
+						</section>						
+							
+			</div>
+			<div>
+			<section class="centrebar">
+						
+						<h2>GRAPH</h2>
+						<img id ="fvstgraphs"src="" alt="" />
+						
+			</section>
+			<section class="centrebar">
+						<h2>CORRELATION</h2>
+						<img id ="fvstgraphscor"src= "" alt="" />
+						
+			</section><br/>
+			<section id="conclu"><p></p></section>
+			</div>
+			
+			</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script type = "text/javascript">
+				var a = document.getElementById("year")
+				a.onclick = yearfn
+				var b
+				var i = document.getElementById("fvstgraphs")
+				var i2 = document.getElementById("fvstgraphscor")
+				var c = document.getElementById("conclu")
+				function yearfn()
+				{
+					if(a.value == 2007)
+					{
+						i.src = "1ttt.png"
+						i2.src = "YearwiseForestvspop/2007.png"
+						c.innerHTML="The above graph indicates the relationship between the forest cover and the population for all the different geographical regions spread all across India for the year 2007. There is a negative correlation of 0.090 between the forest cover and the population density. This value suggests that there no significant relationship between them and that the forest cover is inversely proportional to the population density."
+						
+					}
+					else if(a.value == 2008)
+					{
+						i.src = "2ttt.png"
+						i2.src = "YearwiseForestvspop/2008.png"
+						c.innerHTML="The above graph indicates the relationship between the forest cover and the population for all the different geographical regions spread all across India for the year 2008. There is a negative correlation of 0.084 between the forest cover and the population density. This value suggests that there is no significant relationship between them and that the forest cover is inversely proportional to the population. Compared to the previous year, which has a negative correlation of 0.09, we can see that there is not much of a change in the values which indicates that the way the population affects the forest cover remains the same."
+					}
+					else if(a.value == 2009)
+					{
+						i.src = "3ttt.png"
+						i2.src = "YearwiseForestvspop/2009.png"
+						c.innerHTML="The above graph indicates the relationship between the forest cover and the population for all the different geographical regions spread all across India for the year 2009. There is a negative correlation of 0.089 between the forest cover and the population density. This value suggests that there is a very slight relationship between them and that the forest cover is inversely proportional to the population. Compared to the previous year, which has a negative correlation of 0.084, we can see that there is not much of a change in the values which indicates that the way the population affects the forest cover remains the same."
+					}
+					else if(a.value == 2010)
+					{
+						i.src = "4ttt.png"
+						i2.src = "YearwiseForestvspop/2010.png"
+						c.innerHTML="The above graph indicates the relationship between the forest cover and the population for all the different geographical regions spread all across India for the year 2010. There is a negative correlation of 0.091 between the forest cover and the population density. This value suggests that there is a very slight relationship between them and that the forest cover is inversely proportional to the population. Compared to the previous year, which has a negative correlation of 0.089, we can see that there is not much of a change in the values which indicates that the way the population affects the forest cover remains the same."
+					}
+					else if(a.value == 2011)
+					{
+						i.src = "5ttt.png"
+						i2.src = "YearwiseForestvspop/2011.png"
+						c.innerHTML="The above graph indicates the relationship between the forest cover and the population for all the different geographical regions spread all across India for the year 2011. There is a negative correlation of 0.092 between the forest cover and the population density. This value suggests that there is a very slight relationship between them and that the forest cover is inversely proportional to the population. Compared to the previous year, which has a negative correlation of 0.091, we can see that there is not much of a change in the values which indicates that the way the population affects the forest cover remains the same."
+					}
+					else if(a.value == 2012)
+					{
+						i.src = "6ttt.png"
+						i2.src = "YearwiseForestvspop/2012.png"
+						c.innerHTML="The above graph indicates the relationship between the forest cover and the population for all the different geographical regions spread all across India for the year 2012. There is a negative correlation of 0.090 between the forest cover and the population density. This value suggests that there is a very slight relationship between them and that the forest cover is inversely proportional to the population. Compared to the previous year, which has a negative correlation of 0.092, we can see that there is not much of a change in the values which indicates that the way the population affects the forest cover remains the same."
+					}
+					else if(a.value == 2013)
+					{
+						i.src = "7ttt.png"
+						i2.src = "YearwiseForestvspop/2013.png"
+						c.innerHTML="The above graph indicates the relationship between the forest cover and the population for all the different geographical regions spread all across India for the year 2013. There is a negative correlation of 0.091 between the forest cover and the population density. This value suggests that there is a very slight relationship between them and that the forest cover is inversely proportional to the population. Compared to the previous year, which has a negative correlation of 0.090, we can see that there is is not much of a change in the values which indicates that the way the population affects the forest cover remains the same."
+					}
+					b = document.getElementById("region")
+					b.onclick = regionfn
+				}
+				function regionfn()
+				{
+					if(a.value == 2007)
+					{
+
+						if(b.value == "Northernmountains")
+						{
+							i.src = "1p.png"
+							i2.src = "NM2007p.png"
+							c.innerHTML="The Northern Mountains are situated in the states of Jammu and Kashmir, Himachal Pradesh, Sikkim and nearby areas. The entire Himalayan Belt comes under this region. Alpine forests, Himalayan Broad Leaf forests and Needle Leaf forests make up most of the mountainside. The vegetation typically consists of trees such as birch, maple, deodar and spruce. The population is sparse in many places due to the difficult terrain. This is however not the case everywhere as there are many heavily populated cities as well. There is a negative correlation of 0.28 which suggests there isn't much of a linear dependence of the forest cover on the population. The negative value tells us that the forest cover is inversely proportional to the population density. The small correlation value is due to the fact that most of the forests are evergreen and the population is not very high in these areas. "
+						}
+						else if(b.value == "Easternplains")
+						{
+							i.src = "8p.png"
+							i2.src = "EP2007p.png"
+							c.innerHTML="The Eastern Plains of India are mainly situated in the states of Orissa, Bihar and West Bengal. The forests here are classified into tropical-moist-deciduous type and tropical-dry-deciduous variety. The world’s largest mangrove forest, The Sunderbans are located in West Bengal. The population is fairly high in all of these states with many big cities being densely populated. There is a negative correlation of 0.49 between the forest cover and the population. This moderate value tells us that there is a small amount of linear dependence of the forest cover on the population. The negative value is because the forest cover is inversely proportional to the population."
+						}
+						else if(b.value == "Westernplains")
+						{
+							i.src = "15p.png"
+							i2.src = "WP2007p.png"
+							c.innerHTML="The Western Plains of India are situated in parts of Gujarat, Rajasthan and Punjab.  Northern Desert Thorn Forest, dry deciduous scrub forest, dry savannah forests make up the forests in this region. The population distribution is varied, with the dry and arid areas of Gujarat and Rajasthan having far fewer people compared to the rest of the regions. There is a correlation of 0.143 between the forest cover and the population. This very small value indicates that there is almost no linear relationship between the forest cover and the population in these regions. A possible reason for this behaviour is because the forest cover is sparse in many parts of this region and remains the same throughout."
+						}
+						else if(b.value == "Northernplains")
+						{
+							i.src = "22p.png"
+							i2.src = "NP2007p.png"
+							c.innerHTML="The Northern Plains are situated in parts of Uttar Pradesh, Uttarakhand, Haryana and Bihar. Tropical Moist Deciduous Forests and Tropical Dry Deciduous Forests are the type of forests in this region. Uttarakhand has a wide diversity of flora, with forests occupying 65% of the state’s total area. The population density in this region is very high, mainly due to the fact that it lies in the Ganga and the Yamuna Basin. There is a negative correlation of 0.07 which tells us that there is no significant relationship between the forest cover and the population density. The negative value tells us that the forest cover is inversely proportional to the population density. A possible explanation for this behaviour is due to the fact that the forests and population are not distributed evenly. Uttar Pradesh is one of the most populous states in India whereas Uttarakhand is not very populous and forests cover 65% of its area."
+						}
+						else if(b.value == "Centralhighlands")
+						{
+							i.src = "29p.png"
+							i2.src = "CH2007p.png"
+							c.innerHTML="The Central Highlands are situated in parts of Madhya Pradesh, Jharkhand, Uttar Pradesh and Rajasthan. Tropical moist forests, tropical dry forests, tropical thorn forests and subtropical broadleaved hill forests make up the forests in this region.Madhya Pradesh has more forest cover than any other state in India. The population density in this region is fairly high.There is a negative correlation of 0.41 which suggests a very small dependence of the forest cover on the population density.The negative value tells us that the forest cover is inversely proportional to the population density. This value of the correlation co-effecient can be attributed to the deforestation due to the increase in population."
+						}
+						else if(b.value == "Deccanplateau")
+						{
+							i.src = "36p.png"
+							i2.src = "DP2007p.png"
+							c.innerHTML="The Deccan Plateau is situated in parts of Karnataka, Andhra Pradesh, Kerala and  other neighbouring states. Evergreen and Semi-evergreen, Moist and Dry Deciduous, Scrub and Thorny Forests make up the forests in this region. Teak, neem and sandalwood are some of the trees found in these forests. The population density in this region is moderately high with some of the metropolitan cities having a very high population. There is a negative correlation of 0.33 between the forest cover and the population which suggests there is a very slight relationship between them.The negative value tells us that the forest cover is inversely proportional to the population density."
+						}
+						else if(b.value == "Coastal")
+						{
+							i.src = "43p.png"
+							i2.src = "CO2007p.png"
+							c.innerHTML="The coastal region comprises of the Eastern Coastal Plains and the Western Coastal Plains. The states Gujarat, Karnataka, Tamil Nadu and many others form a part of the coastline. East Deccan dry evergreen forests and mangroves comprise the vegetation in this region. The population density is also high with many big cities such as Chennai and Mumbai coming under this region.There is a negative correlation of 0.132 between the forest cover and the population which indicates that there is almost no dependence of the forest cover on the population. The negative value shows that the forest cover is inversely proportional to the population density."
+						}
+						
+						
+					}
+					else if(a.value == 2008)
+					{
+				
+						if(b.value == "Northernmountains")
+						{
+							i.src = "2p.png"
+							i2.src = "NM2008p.png"
+							c.innerHTML="The Northern Mountains are situated in the states of Jammu and Kashmir, Himachal Pradesh, Sikkim and nearby areas. The entire Himalayan Belt comes under this region. Alpine forests, Himalayan Broad Leaf forests and Needle Leaf forests make up most of the mountainside. The vegetation typically consists of trees such as birch, maple, deodar and spruce. The population is sparse in many places due to the difficult terrain. This is however not the case everywhere as there are many heavily populated cities as well. There is a negative correlation of 0.20 which suggests there isn't much of a linear dependence of the forest cover on the population. The negative value tells us that the forest cover is inversely proportional to the population density. The small correlation value is due to the fact that most of the forests are evergreen and the population is not very high in these areas. There is not a very significant difference in the correlation value when compared to the previous year which suggests there is not much of a change in the population density or the forest cover or the relationship between the two of them. "
+						}
+						else if(b.value == "Easternplains")
+						{
+							i.src = "9p.png"
+							i2.src = "EP2008p.png"
+								c.innerHTML="The Eastern Plains of India are mainly situated in the states of Orissa, Bihar and West Bengal. The forests here are classified into tropical-moist-deciduous type and tropical-dry-deciduous variety. The world’s largest mangrove forest, The Sunderbans are located in West Bengal. The population is fairly high in all of these states with many big cities being densely populated. There is a negative correlation of 0.495 between the forest cover and the population. This moderate value tells us that there is a small amount of linear dependence of the forest cover on the population. The negative value is because the forest cover is inversely proportional to the population.There is a very small difference in the correlation value when compared to the previous year which suggests there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+						}
+						else if(b.value == "Westernplains")
+						{
+							i.src = "16p.png"
+							i2.src = "WP2008p.png"
+							c.innerHTML="The Western Plains of India are situated in parts of Gujarat, Rajasthan and Punjab.  Northern Desert Thorn Forest, dry deciduous scrub forest, dry savannah forests make up the forests in this region. The population distribution is varied, with the dry and arid areas of Gujarat and Rajasthan having far fewer people compared to the rest of the regions. There is a correlation of 0.144 between the forest cover and the population. This very small value indicates that there is almost no linear relationship between the forest cover and the population in these regions. A possible reason for this behaviour is because the forest cover is sparse in many parts of this region and remains the same throughout.There is a very small difference in the correlation value when compared to the previous year which suggests there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+						}
+						else if(b.value == "Northernplains")
+						{
+							i.src = "23p.png"
+							i2.src = "NP2008p.png"
+							c.innerHTML="The Northern Plains are situated in parts of Uttar Pradesh, Uttarakhand, Haryana and Bihar. Tropical Moist Deciduous Forests and Tropical Dry Deciduous Forests are the type of forests in this region. Uttarakhand has a wide diversity of flora, with forests occupying 65% of the state’s total area. The population density in this region is very high, mainly due to the fact that it lies in the Ganga and the Yamuna Basin. There is a negative correlation of 0.03 which tells us that there is no significant relationship between the forest cover and the population density. The negative value tells us that the forest cover is inversely proportional to the population density. A possible explanation for this behaviour is due to the fact that the forests and population are not distributed evenly. Uttar Pradesh is one of the most populous states in India whereas Uttarakhand is not very populous and forests cover 65% of its area.There is a very small difference in the correlation value when compared to the previous year which suggests there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+						}
+						else if(b.value == "Centralhighlands")
+						{
+							i.src = "30p.png"
+							i2.src = "CH2008p.png"
+							c.innerHTML="The Central Highlands are situated in parts of Madhya Pradesh, Jharkhand, Uttar Pradesh and Rajasthan. Tropical moist forests, tropical dry forests, tropical thorn forests and subtropical broadleaved hill forests make up the forests in this region.Madhya Pradesh has more forest cover than any other state in India. The population density in this region is fairly high.There is a negative correlation of 0.415 which suggests a very small dependence of the forest cover on the population density.The negative value tells us that the forest cover is inversely proportional to the population density. This value of the correlation co-effecient can be attributed to the deforestation due to the increase in population.There is a very small difference in the correlation value when compared to the previous year which suggests there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+						}
+						else if(b.value == "Deccanplateau")
+						{
+							i.src = "37p.png"
+							i2.src = "DP2008p.png"
+							c.innerHTML="The Deccan Plateau is situated in parts of Karnataka, Andhra Pradesh, Kerala and  other neighbouring states. Evergreen and Semi-evergreen, Moist and Dry Deciduous, Scrub and Thorny Forests make up the forests in this region. Teak, neem and sandalwood are some of the trees found in these forests. The population density in this region is moderately high with some of the metropolitan cities having a very high population. There is a negative correlation of 0.29 between the forest cover and the population which suggests there is a very slight relationship between them.The negative value tells us that the forest cover is inversely proportional to the population density.There is a very small difference in the correlation value when compared to the previous year which suggests there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+						}
+						else if(b.value == "Coastal")
+						{
+							i.src = "44p.png"
+							i2.src = "CO2008p.png"
+							c.innerHTML="The coastal region comprises of the Eastern Coastal Plains and the Western Coastal Plains. The states Gujarat, Karnataka, Tamil Nadu and many others form a part of the coastline. East Deccan dry evergreen forests and mangroves comprise the vegetation in this region. The population density is also high with many big cities such as Chennai and Mumbai coming under this region.There is a negative correlation of 0.136 between the forest cover and the population which indicates that there is almost no dependence of the forest cover on the population. The negative value shows that the forest cover is inversely proportional to the population density. There is not much of a difference in the correlation value when compared to the previous year which tells us that there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+							
+						}
+					}
+					else if(a.value == 2009)
+					{
+						
+						if(b.value == "Northernmountains")
+						{
+							i.src = "3p.png"
+							i2.src = "NM2009p.png"
+							c.innerHTML="The Northern Mountains are situated in the states of Jammu and Kashmir, Himachal Pradesh, Sikkim and nearby areas. The entire Himalayan Belt comes under this region. Alpine forests, Himalayan Broad Leaf forests and Needle Leaf forests make up most of the mountainside. The vegetation typically consists of trees such as birch, maple, deodar and spruce. The population is sparse in many places due to the difficult terrain. This is however not the case everywhere as there are many heavily populated cities as well. There is a negative correlation of 0.23 which suggests there isn't much of a linear dependence of the forest cover on the population. The negative value tells us that the forest cover is inversely proportional to the population density. The small correlation value is due to the fact that most of the forests are evergreen and the population is not very high in these areas. There is not a very significant difference in the correlation value when compared to the previous year which suggests there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+						}
+						else if(b.value == "Easternplains")
+						{
+							i.src = "10p.png"
+							i2.src = "EP2009p.png"
+							c.innerHTML="The Eastern Plains of India are mainly situated in the states of Orissa, Bihar and West Bengal. The forests here are classified into tropical-moist-deciduous type and tropical-dry-deciduous variety. The world’s largest mangrove forest, The Sunderbans are located in West Bengal. The population is fairly high in all of these states with many big cities being densely populated. There is a negative correlation of 0.5 between the forest cover and the population. This moderate value tells us that there is a small amount of linear dependence of the forest cover on the population. The negative value is because the forest cover is inversely proportional to the population.There is a very small difference in the correlation value when compared to the previous year which suggests there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+						}
+						else if(b.value == "Westernplains")
+						{
+							i.src = "17p.png"
+							i2.src = "WP2009p.png"
+							c.innerHTML="The Western Plains of India are situated in parts of Gujarat, Rajasthan and Punjab.  Northern Desert Thorn Forest, dry deciduous scrub forest, dry savannah forests make up the forests in this region. The population distribution is varied, with the dry and arid areas of Gujarat and Rajasthan having far fewer people compared to the rest of the regions. There is a correlation of 0.144 between the forest cover and the population. This very small value indicates that there is almost no linear relationship between the forest cover and the population in these regions. A possible reason for this behaviour is because the forest cover is sparse in many parts of this region and remains the same throughout.There is a very small difference in the correlation value when compared to the previous year which suggests there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+						}
+						else if(b.value == "Northernplains")
+						{
+							i.src = "24p.png"
+							i2.src = "NP2009p.png"
+							c.innerHTML="The Northern Plains are situated in parts of Uttar Pradesh, Uttarakhand, Haryana and Bihar. Tropical Moist Deciduous Forests and Tropical Dry Deciduous Forests are the type of forests in this region. Uttarakhand has a wide diversity of flora, with forests occupying 65% of the state’s total area. The population density in this region is very high, mainly due to the fact that it lies in the Ganga and the Yamuna Basin. There is a negative correlation of 0.07 which tells us that there is no significant relationship between the forest cover and the population density. The negative value tells us that the forest cover is inversely proportional to the population density. A possible explanation for this behaviour is due to the fact that the forests and population are not distributed evenly. Uttar Pradesh is one of the most populous states in India whereas Uttarakhand is not very populous and forests cover 65% of its area.There is a very small difference in the correlation value when compared to the previous year which suggests there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+						}
+						
+						else if(b.value == "Centralhighlands")
+						{
+							i.src = "31p.png"
+							i2.src = "CH2009p.png"
+							c.innerHTML="The Central Highlands are situated in parts of Madhya Pradesh, Jharkhand, Uttar Pradesh and Rajasthan. Tropical moist forests, tropical dry forests, tropical thorn forests and subtropical broadleaved hill forests make up the forests in this region.Madhya Pradesh has more forest cover than any other state in India. The population density in this region is fairly high.There is a negative correlation of 0.410 which suggests a very small dependence of the forest cover on the population density.The negative value tells us that the forest cover is inversely proportional to the population density. This value of the correlation co-effecient can be attributed to the deforestation due to the increase in population.There is a very small difference in the correlation value when compared to the previous year which suggests there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+						}
+						
+						else if(b.value == "Deccanplateau")
+						{
+							i.src = "38p.png"
+							i2.src = "DP2009p.png"
+							c.innerHTML="The Deccan Plateau is situated in parts of Karnataka, Andhra Pradesh, Kerala and  other neighbouring states. Evergreen and Semi-evergreen, Moist and Dry Deciduous, Scrub and Thorny Forests make up the forests in this region. Teak, neem and sandalwood are some of the trees found in these forests. The population density in this region is moderately high with some of the metropolitan cities having a very high population. There is a negative correlation of 0.28 between the forest cover and the population which suggests there is a very slight relationship between them.The negative value tells us that the forest cover is inversely proportional to the population density.There is a very small difference in the correlation value when compared to the previous year which suggests there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+						}
+						else if(b.value == "Coastal")
+						{
+							i.src = "45p.png"
+							i2.src = "CO2009p.png"
+							c.innerHTML="The coastal region comprises of the Eastern Coastal Plains and the Western Coastal Plains. The states Gujarat, Karnataka, Tamil Nadu and many others form a part of the coastline. East Deccan dry evergreen forests and mangroves comprise the vegetation in this region. The population density is also high with many big cities such as Chennai and Mumbai coming under this region.There is a negative correlation of 0.134 between the forest cover and the population which indicates that there is almost no dependence of the forest cover on the population. The negative value shows that the forest cover is inversely proportional to the population density. There is not much of a difference in the correlation value when compared to the previous year which tells us that there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+						}	
+					}
+					else if(a.value == 2010)
+					{
+					
+						if(b.value == "Northernmountains")
+						{
+							i.src = "4p.png"
+							i2.src = "NM2010p.png"
+							c.innerHTML="The Northern Mountains are situated in the states of Jammu and Kashmir, Himachal Pradesh, Sikkim and nearby areas. The entire Himalayan Belt comes under this region. Alpine forests, Himalayan Broad Leaf forests and Needle Leaf forests make up most of the mountainside. The vegetation typically consists of trees such as birch, maple, deodar and spruce. The population is sparse in many places due to the difficult terrain. This is however not the case everywhere as there are many heavily populated cities as well. There is a negative correlation of 0.20 which suggests there isn't much of a linear dependence of the forest cover on the population. The negative value tells us that the forest cover is inversely proportional to the population density. The small correlation value is due to the fact that most of the forests are evergreen and the population is not very high in these areas. There is not a very significant difference in the correlation value when compared to the previous year which suggests there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+						}
+						else if(b.value == "Easternplains")
+						{
+							i.src = "11p.png"
+							i2.src = "EP2010p.png"
+							c.innerHTML="The Eastern Plains of India are mainly situated in the states of Orissa, Bihar and West Bengal. The forests here are classified into tropical-moist-deciduous type and tropical-dry-deciduous variety. The world’s largest mangrove forest, The Sunderbans are located in West Bengal. The population is fairly high in all of these states with many big cities being densely populated. There is a negative correlation of 0.50 between the forest cover and the population. This moderate value tells us that there is a small amount of linear dependence of the forest cover on the population. The negative value is because the forest cover is inversely proportional to the population.There is a very small difference in the correlation value when compared to the previous year which suggests there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+						}
+						else if(b.value == "Westernplains")
+						{
+							i.src = "18p.png"
+							i2.src = "WP2010p.png"
+							c.innerHTML="The Western Plains of India are situated in parts of Gujarat, Rajasthan and Punjab.  Northern Desert Thorn Forest, dry deciduous scrub forest, dry savannah forests make up the forests in this region. The population distribution is varied, with the dry and arid areas of Gujarat and Rajasthan having far fewer people compared to the rest of the regions. There is a correlation of 0.145 between the forest cover and the population. This very small value indicates that there is almost no linear relationship between the forest cover and the population in these regions. A possible reason for this behaviour is because the forest cover is sparse in many parts of this region and remains the same throughout.There is a very small difference in the correlation value when compared to the previous year which suggests there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+						}
+						else if(b.value == "Northernplains")
+						{
+							i.src = "25p.png"
+							i2.src = "NP2010p.png"
+							c.innerHTML="The Northern Plains are situated in parts of Uttar Pradesh, Uttarakhand, Haryana and Bihar. Tropical Moist Deciduous Forests and Tropical Dry Deciduous Forests are the type of forests in this region. Uttarakhand has a wide diversity of flora, with forests occupying 65% of the state’s total area. The population density in this region is very high, mainly due to the fact that it lies in the Ganga and the Yamuna Basin. There is a negative correlation of 0.07 which tells us that there is no significant relationship between the forest cover and the population density. The negative value tells us that the forest cover is inversely proportional to the population density. A possible explanation for this behaviour is due to the fact that the forests and population are not distributed evenly. Uttar Pradesh is one of the most populous states in India whereas Uttarakhand is not very populous and forests cover 65% of its area.There is a very small difference in the correlation value when compared to the previous year which suggests there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+						}
+						
+						else if(b.value == "Centralhighlands")
+						{
+							i.src = "32p.png"
+							i2.src = "CH2010p.png"
+							c.innerHTML="The Central Highlands are situated in parts of Madhya Pradesh, Jharkhand, Uttar Pradesh and Rajasthan. Tropical moist forests, tropical dry forests, tropical thorn forests and subtropical broadleaved hill forests make up the forests in this region.Madhya Pradesh has more forest cover than any other state in India. The population density in this region is fairly high.There is a negative correlation of 0.415 which suggests a very small dependence of the forest cover on the population density.The negative value tells us that the forest cover is inversely proportional to the population density. This value of the correlation co-effecient can be attributed to the deforestation due to the increase in population.There is a very small difference in the correlation value when compared to the previous year which suggests there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+
+						}
+						else if(b.value == "Deccanplateau")
+						{
+							i.src = "39p.png"
+							i2.src = "DP2010p.png"
+							c.innerHTML="The Deccan Plateau is situated in parts of Karnataka, Andhra Pradesh, Kerala and  other neighbouring states. Evergreen and Semi-evergreen, Moist and Dry Deciduous, Scrub and Thorny Forests make up the forests in this region. Teak, neem and sandalwood are some of the trees found in these forests. The population density in this region is moderately high with some of the metropolitan cities having a very high population. There is a negative correlation of 0.31 between the forest cover and the population which suggests there is a very slight relationship between them.The negative value tells us that the forest cover is inversely proportional to the population density.There is a very small difference in the correlation value when compared to the previous year which suggests there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+						}
+						else if(b.value == "Coastal")
+						{
+							i.src = "46p.png"
+							i2.src = "CO2010p.png"
+							c.innerHTML="The coastal region comprises of the Eastern Coastal Plains and the Western Coastal Plains. The states Gujarat, Karnataka, Tamil Nadu and many others form a part of the coastline. East Deccan dry evergreen forests and mangroves comprise the vegetation in this region. The population density is also high with many big cities such as Chennai and Mumbai coming under this region.There is a negative correlation of 0.135 between the forest cover and the population which indicates that there is almost no dependence of the forest cover on the population. The negative value shows that the forest cover is inversely proportional to the population density. There is not much of a difference in the correlation value when compared to the previous year which tells us that there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+						}
+					}
+					else if(a.value == 2011)
+					{
+					
+						if(b.value == "Northernmountains")
+						{
+							i.src = "5p.png"
+							i2.src = "NM2011p.png"
+							c.innerHTML="The Northern Mountains are situated in the states of Jammu and Kashmir, Himachal Pradesh, Sikkim and nearby areas. The entire Himalayan Belt comes under this region. Alpine forests, Himalayan Broad Leaf forests and Needle Leaf forests make up most of the mountainside. The vegetation typically consists of trees such as birch, maple, deodar and spruce. The population is sparse in many places due to the difficult terrain. This is however not the case everywhere as there are many heavily populated cities as well. There is a negative correlation of 0.19 which suggests there isn't much of a linear dependence of the forest cover on the population. The negative value tells us that the forest cover is inversely proportional to the population density. The small correlation value is due to the fact that most of the forests are evergreen and the population is not very high in these areas. There is not a very significant difference in the correlation value when compared to the previous year which suggests there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+						}
+						else if(b.value == "Easternplains")
+						{
+							i.src = "12p.png"
+							i2.src = "EP2011p.png"
+							c.innerHTML="The Eastern Plains of India are mainly situated in the states of Orissa, Bihar and West Bengal. The forests here are classified into tropical-moist-deciduous type and tropical-dry-deciduous variety. The world’s largest mangrove forest, The Sunderbans are located in West Bengal. The population is fairly high in all of these states with many big cities being densely populated. There is a negative correlation of 0.51 between the forest cover and the population. This moderate value tells us that there is a small amount of linear dependence of the forest cover on the population. The negative value is because the forest cover is inversely proportional to the population.There is a very small difference in the correlation value when compared to the previous year which suggests there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+						}
+						else if(b.value == "Westernplains")
+						{
+							i.src = "19p.png"
+							i2.src = "WP2011p.png"
+							c.innerHTML="The Western Plains of India are situated in parts of Gujarat, Rajasthan and Punjab.  Northern Desert Thorn Forest, dry deciduous scrub forest, dry savannah forests make up the forests in this region. The population distribution is varied, with the dry and arid areas of Gujarat and Rajasthan having far fewer people compared to the rest of the regions. There is a correlation of 0.145 between the forest cover and the population. This very small value indicates that there is almost no linear relationship between the forest cover and the population in these regions. A possible reason for this behaviour is because the forest cover is sparse in many parts of this region and remains the same throughout.There is a very small difference in the correlation value when compared to the previous year which suggests there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+						}
+						else if(b.value == "Northernplains")
+						{
+							i.src = "26p.png"
+							i2.src = "NP2011p.png"
+							c.innerHTML="The Northern Plains are situated in parts of Uttar Pradesh, Uttarakhand, Haryana and Bihar. Tropical Moist Deciduous Forests and Tropical Dry Deciduous Forests are the type of forests in this region. Uttarakhand has a wide diversity of flora, with forests occupying 65% of the state’s total area. The population density in this region is very high, mainly due to the fact that it lies in the Ganga and the Yamuna Basin. There is a negative correlation of 0.20 which tells us that there is no significant relationship between the forest cover and the population density. The negative value tells us that the forest cover is inversely proportional to the population density. A possible explanation for this behaviour is due to the fact that the forests and population are not distributed evenly. Uttar Pradesh is one of the most populous states in India whereas Uttarakhand is not very populous and forests cover 65% of its area.There is a very small difference in the correlation value when compared to the previous year which suggests there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+						}
+						else if(b.value == "Centralhighlands")
+						{
+							i.src = "33p.png"
+							i2.src = "CH2011p.png"
+							c.innerHTML="The Central Highlands are situated in parts of Madhya Pradesh, Jharkhand, Uttar Pradesh and Rajasthan. Tropical moist forests, tropical dry forests, tropical thorn forests and subtropical broadleaved hill forests make up the forests in this region.Madhya Pradesh has more forest cover than any other state in India. The population density in this region is fairly high.There is a negative correlation of 0.413 which suggests a very small dependence of the forest cover on the population density.The negative value tells us that the forest cover is inversely proportional to the population density. This value of the correlation co-effecient can be attributed to the deforestation due to the increase in population.There is a very small difference in the correlation value when compared to the previous year which suggests there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+						}
+						else if(b.value == "Deccanplateau")
+						{
+							i.src = "40p.png"
+							i2.src = "DP2011p.png"
+							c.innerHTML="The Deccan Plateau is situated in parts of Karnataka, Andhra Pradesh, Kerala and  other neighbouring states. Evergreen and Semi-evergreen, Moist and Dry Deciduous, Scrub and Thorny Forests make up the forests in this region. Teak, neem and sandalwood are some of the trees found in these forests. The population density in this region is moderately high with some of the metropolitan cities having a very high population. There is a negative correlation of 0.30 between the forest cover and the population which suggests there is a very slight relationship between them.The negative value tells us that the forest cover is inversely proportional to the population density.There is a very small difference in the correlation value when compared to the previous year which suggests there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+						}
+						else if(b.value == "Coastal")
+						{
+							i.src = "47p.png"
+							i2.src = "CO2011p.png"
+							c.innerHTML="The coastal region comprises of the Eastern Coastal Plains and the Western Coastal Plains. The states Gujarat, Karnataka, Tamil Nadu and many others form a part of the coastline. East Deccan dry evergreen forests and mangroves comprise the vegetation in this region. The population density is also high with many big cities such as Chennai and Mumbai coming under this region.There is a negative correlation of 0.136 between the forest cover and the population which indicates that there is almost no dependence of the forest cover on the population. The negative value shows that the forest cover is inversely proportional to the population density. There is not much of a difference in the correlation value when compared to the previous year which tells us that there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+						}	
+					}
+					else if(a.value == 2012)
+					{
+					
+						if(b.value == "Northernmountains")
+						{
+							i.src = "6p.png"
+							i2.src = "NM2012p.png"
+							c.innerHTML="The Northern Mountains are situated in the states of Jammu and Kashmir, Himachal Pradesh, Sikkim and nearby areas. The entire Himalayan Belt comes under this region. Alpine forests, Himalayan Broad Leaf forests and Needle Leaf forests make up most of the mountainside. The vegetation typically consists of trees such as birch, maple, deodar and spruce. The population is sparse in many places due to the difficult terrain. This is however not the case everywhere as there are many heavily populated cities as well. There is a negative correlation of 0.18 which suggests there isn't much of a linear dependence of the forest cover on the population. The negative value tells us that the forest cover is inversely proportional to the population density. The small correlation value is due to the fact that most of the forests are evergreen and the population is not very high in these areas. There is not a very significant difference in the correlation value when compared to the previous year which suggests there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+						}
+						else if(b.value == "Easternplains")
+						{
+							i.src = "13p.png"
+							i2.src = "EP2012p.png"
+							c.innerHTML="The Eastern Plains of India are mainly situated in the states of Orissa, Bihar and West Bengal. The forests here are classified into tropical-moist-deciduous type and tropical-dry-deciduous variety. The world’s largest mangrove forest, The Sunderbans are located in West Bengal. The population is fairly high in all of these states with many big cities being densely populated. There is a negative correlation of 0.52 between the forest cover and the population. This moderate value tells us that there is a small amount of linear dependence of the forest cover on the population. The negative value is because the forest cover is inversely proportional to the population.There is a very small difference in the correlation value when compared to the previous year which suggests there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+						}
+						else if(b.value == "Westernplains")
+						{
+							i.src = "20p.png"
+							i2.src = "WP2012p.png"
+							c.innerHTML="The Western Plains of India are situated in parts of Gujarat, Rajasthan and Punjab.  Northern Desert Thorn Forest, dry deciduous scrub forest, dry savannah forests make up the forests in this region. The population distribution is varied, with the dry and arid areas of Gujarat and Rajasthan having far fewer people compared to the rest of the regions. There is a correlation of 0.147 between the forest cover and the population. This very small value indicates that there is almost no linear relationship between the forest cover and the population in these regions. A possible reason for this behaviour is because the forest cover is sparse in many parts of this region and remains the same throughout.There is a very small difference in the correlation value when compared to the previous year which suggests there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+						}
+						else if(b.value == "Northernplains")
+						{
+							i.src = "27p.png"
+							i2.src = "NP2012p.png"
+							c.innerHTML="The Northern Plains are situated in parts of Uttar Pradesh, Uttarakhand, Haryana and Bihar. Tropical Moist Deciduous Forests and Tropical Dry Deciduous Forests are the type of forests in this region. Uttarakhand has a wide diversity of flora, with forests occupying 65% of the state’s total area. The population density in this region is very high, mainly due to the fact that it lies in the Ganga and the Yamuna Basin. There is a negative correlation of 0.20 which tells us that there is no significant relationship between the forest cover and the population density. The negative value tells us that the forest cover is inversely proportional to the population density. A possible explanation for this behaviour is due to the fact that the forests and population are not distributed evenly. Uttar Pradesh is one of the most populous states in India whereas Uttarakhand is not very populous and forests cover 65% of its area.There is a very small difference in the correlation value when compared to the previous year which suggests there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+
+						}
+						else if(b.value == "Centralhighlands")
+						{
+							i.src = "34p.png"
+							i2.src = "CH2012p.png"
+							c.innerHTML="The Central Highlands are situated in parts of Madhya Pradesh, Jharkhand, Uttar Pradesh and Rajasthan. Tropical moist forests, tropical dry forests, tropical thorn forests and subtropical broadleaved hill forests make up the forests in this region.Madhya Pradesh has more forest cover than any other state in India. The population density in this region is fairly high.There is a negative correlation of 0.409 which suggests a very small dependence of the forest cover on the population density.The negative value tells us that the forest cover is inversely proportional to the population density. This value of the correlation co-effecient can be attributed to the deforestation due to the increase in population.There is a very small difference in the correlation value when compared to the previous year which suggests there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+						}
+						else if(b.value == "Deccanplateau")
+						{
+							i.src = "41p.png"
+							i2.src = "DP2012p.png"
+							c.innerHTML="The Deccan Plateau is situated in parts of Karnataka, Andhra Pradesh, Kerala and  other neighbouring states. Evergreen and Semi-evergreen, Moist and Dry Deciduous, Scrub and Thorny Forests make up the forests in this region. Teak, neem and sandalwood are some of the trees found in these forests. The population density in this region is moderately high with some of the metropolitan cities having a very high population. There is a negative correlation of 0.30 between the forest cover and the population which suggests there is a very slight relationship between them.The negative value tells us that the forest cover is inversely proportional to the population density.There is a very small difference in the correlation value when compared to the previous year which suggests there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+						}
+						else if(b.value == "Coastal")
+						{
+							i.src = "48p.png"
+							i2.src = "CO2012p.png"
+							c.innerHTML="The coastal region comprises of the Eastern Coastal Plains and the Western Coastal Plains. The states Gujarat, Karnataka, Tamil Nadu and many others form a part of the coastline. East Deccan dry evergreen forests and mangroves comprise the vegetation in this region. The population density is also high with many big cities such as Chennai and Mumbai coming under this region.There is a negative correlation of 0.128 between the forest cover and the population which indicates that there is almost no dependence of the forest cover on the population. The negative value shows that the forest cover is inversely proportional to the population density. There is not much of a difference in the correlation value when compared to the previous year which tells us that there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+						}	
+					}
+					else if(a.value == 2013)
+					{
+
+						if(b.value == "Northernmountains")
+						{
+							i.src = "7p.png"
+							i2.src = "NM2013p.png"
+							c.innerHTML="The Northern Mountains are situated in the states of Jammu and Kashmir, Himachal Pradesh, Sikkim and nearby areas. The entire Himalayan Belt comes under this region. Alpine forests, Himalayan Broad Leaf forests and Needle Leaf forests make up most of the mountainside. The vegetation typically consists of trees such as birch, maple, deodar and spruce. The population is sparse in many places due to the difficult terrain. This is however not the case everywhere as there are many heavily populated cities as well. There is a negative correlation of 0.23 which suggests there isn't much of a linear dependence of the forest cover on the population. The negative value tells us that the forest cover is inversely proportional to the population density. The small correlation value is due to the fact that most of the forests are evergreen and the population is not very high in these areas. There is not a very significant difference in the correlation value when compared to the previous year which suggests there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+						}
+						else if(b.value == "Easternplains")
+						{
+							i.src = "14p.png"
+							i2.src = "EP2013p.png"
+							c.innerHTML="The Eastern Plains of India are mainly situated in the states of Orissa, Bihar and West Bengal. The forests here are classified into tropical-moist-deciduous type and tropical-dry-deciduous variety. The world’s largest mangrove forest, The Sunderbans are located in West Bengal. The population is fairly high in all of these states with many big cities being densely populated. There is a negative correlation of 0.51 between the forest cover and the population. This moderate value tells us that there is a small amount of linear dependence of the forest cover on the population. The negative value is because the forest cover is inversely proportional to the population.There is a very small difference in the correlation value when compared to the previous year which suggests there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+						}
+						else if(b.value == "Westernplains")
+						{
+							i.src = "21p.png"
+							i2.src = "WP2013p.png"
+							c.innerHTML="The Western Plains of India are situated in parts of Gujarat, Rajasthan and Punjab.  Northern Desert Thorn Forest, dry deciduous scrub forest, dry savannah forests make up the forests in this region. The population distribution is varied, with the dry and arid areas of Gujarat and Rajasthan having far fewer people compared to the rest of the regions. There is a correlation of 0.144 between the forest cover and the population. This very small value indicates that there is almost no linear relationship between the forest cover and the population in these regions. A possible reason for this behaviour is because the forest cover is sparse in many parts of this region and remains the same throughout.There is a very small difference in the correlation value when compared to the previous year which suggests there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+						}
+						else if(b.value == "Northernplains")
+						{
+							i.src = "28p.png"
+							i2.src = "NP2013p.png"
+							c.innerHTML="The Northern Plains are situated in parts of Uttar Pradesh, Uttarakhand, Haryana and Bihar. Tropical Moist Deciduous Forests and Tropical Dry Deciduous Forests are the type of forests in this region. Uttarakhand has a wide diversity of flora, with forests occupying 65% of the state’s total area. The population density in this region is very high, mainly due to the fact that it lies in the Ganga and the Yamuna Basin. There is a negative correlation of 0.07 which tells us that there is no significant relationship between the forest cover and the population density. The negative value tells us that the forest cover is inversely proportional to the population density. A possible explanation for this behaviour is due to the fact that the forests and population are not distributed evenly. Uttar Pradesh is one of the most populous states in India whereas Uttarakhand is not very populous and forests cover 65% of its area.There is a very small difference in the correlation value when compared to the previous year which suggests there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+						}
+						else if(b.value == "Centralhighlands")
+						{
+							i.src = "35p.png"
+							i2.src = "CH2013p.png"
+							c.innerHTML="The Central Highlands are situated in parts of Madhya Pradesh, Jharkhand, Uttar Pradesh and Rajasthan. Tropical moist forests, tropical dry forests, tropical thorn forests and subtropical broadleaved hill forests make up the forests in this region.Madhya Pradesh has more forest cover than any other state in India. The population density in this region is fairly high.There is a negative correlation of 0.410 which suggests a very small dependence of the forest cover on the population density.The negative value tells us that the forest cover is inversely proportional to the population density. This value of the correlation co-effecient can be attributed to the deforestation due to the increase in population.There is a very small difference in the correlation value when compared to the previous year which suggests there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+						}
+						else if(b.value == "Deccanplateau")
+						{
+							i.src = "42p.png"
+							i2.src = "DP2013p.png"
+							c.innerHTML="The Deccan Plateau is situated in parts of Karnataka, Andhra Pradesh, Kerala and  other neighbouring states. Evergreen and Semi-evergreen, Moist and Dry Deciduous, Scrub and Thorny Forests make up the forests in this region. Teak, neem and sandalwood are some of the trees found in these forests. The population density in this region is moderately high with some of the metropolitan cities having a very high population. There is a negative correlation of 0.32 between the forest cover and the population which suggests there is a very slight relationship between them.The negative value tells us that the forest cover is inversely proportional to the population density.There is a very small difference in the correlation value when compared to the previous year which suggests there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+						}
+						else if(b.value == "Coastal")
+						{
+							i.src = "49p.png"
+							i2.src = "CO2013p.png"
+							c.innerHTML="The coastal region comprises of the Eastern Coastal Plains and the Western Coastal Plains. The states Gujarat, Karnataka, Tamil Nadu and many others form a part of the coastline. East Deccan dry evergreen forests and mangroves comprise the vegetation in this region. The population density is also high with many big cities such as Chennai and Mumbai coming under this region.There is a negative correlation of 0.133 between the forest cover and the population which indicates that there is almost no dependence of the forest cover on the population. The negative value shows that the forest cover is inversely proportional to the population density. There is not much of a difference in the correlation value when compared to the previous year which tells us that there is not much of a change in the population density or the forest cover or the relationship between the two of them."
+						}
+					}
+					
+				}
+			</script>
+
+	</body>
+</html>

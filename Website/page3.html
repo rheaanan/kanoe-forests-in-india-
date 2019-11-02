@@ -1,0 +1,506 @@
+<!DOCTYPE HTML>
+<!--
+	Epilogue by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Forest Cover In India</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		
+		
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header" class="alt">
+				<div id="nav-wrapper"> 
+				<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						
+						  	<li><a href = "pred.html">Prediction</a></li>
+
+							<li><a href = "index.html">Home</a></li>
+						
+						<li><a href="maps.html">Maps</a></li>
+						<li class="active"><a href="data.html">Get Data</a></li>
+						<li class="active"><a href="prediction.html">Regression</a></li>
+					</ul>
+				</nav>
+				
+				
+			</div>
+			<p>REPORT<br/>Analysis based on physiographic divisions of India
+			</p>
+			</header>
+
+		<!-- Wrapper -->
+		<div>
+			<div id="leftsidebar">
+						<section>
+							<header>
+								<h2 class="image">Choose YEAR</h2>
+								<form>
+								<select class="dropdown" id = "year" size = "7" style = "position:absolute;height: 200px;width:200px" autofocus>
+								
+								  <option value="2007">2007</option>
+								  <option value="2008">2008</option>
+								  <option value="2009">2009</option>
+								  <option value="2010">2010</option>
+								  <option value="2011">2011</option>
+								  <option value="2012">2012</option>
+								  <option value="2013">2013</option>
+								</select>
+								</form>
+								</form>
+							</header>
+						</section>
+							<section>
+							<header>
+								<h2 class="image">Choose REGION</h2>
+								<form>
+								<select class="dropdown" id = "region" size = "7" style = "position:absolute;height: 200px;width:200px">
+								  <option value="Northernmountains">Northern Mountains</option>
+								  <option value="Easternplains">Eastern Plains</option>
+								  <option value="Westernplains">Western Plains</option>
+								  <option value="Northernplains">Northern Plains</option>
+								  <option value="Centralhighlands">Central Highlands</option>
+								  <option value="Deccanplateau">Deccan Plateau</option>
+								  <option value="Coastal">Coastal</option>
+								</select>
+								</form>
+							</header>
+						</section>						
+							
+			</div>
+			<div>
+			<section class="centrebar">
+						
+						<h2>GRAPH</h2>
+						<img id ="fvsrgraphs"src="" alt="" />
+						
+			</section>
+			<section class="centrebar">
+						<h2>CORRELATION</h2>
+						<img id ="fvsrgraphscor"src= "" alt="" />
+						
+			</section><br/>
+			<section id="conclu"><p></p></section>
+			</div>
+			
+			</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script type = "text/javascript">
+				var a = document.getElementById("year")
+				a.onclick = yearfn
+				var b
+				var i = document.getElementById("fvsrgraphs")
+				var i2 = document.getElementById("fvsrgraphscor")
+				var co = document.getElementById("conclu")
+				function yearfn()
+				{
+					if(a.value == 2007)
+					{
+						i.src = "1y.png"
+						i2.src = "Yearwise ForestvsRainfall/2007.png"
+						co.innerHTML = "The above graph indicates the relationship between the forest cover and the rainfall for all the different geographical regions spread all across India for the year 2007. There is a correlation of 0.58 between the forest cover and the rainfall. This value suggests that there is a moderate relationship between them and that the rainfall is directly proportional to the forest cover. "
+						
+						
+					}
+					else if(a.value == 2008)
+					{
+						i.src = "2y.png"
+						i2.src = "Yearwise ForestvsRainfall/2008.png"
+						co.innerHTML = "The above graph indicates the relationship between the forest cover and the rainfall for all the different geographical regions spread all across India for the year 2008. There is a correlation of 0.53 between the forest cover and the rainfall. This value suggests that there is a moderate relationship between them and that the rainfall is directly proportional to the forest cover.Compared to the previous year, which has a correlation of 0.58, we can see that there is not a very significant change in the values, which shows that the relationship between the forest cover and rainfall remains the same."
+					}
+					else if(a.value == 2009)
+					{
+						i.src = "3y.png"
+						i2.src = "Yearwise ForestvsRainfall/2009.png"
+						co.innerHTML = "The above graph indicates the relationship between the forest cover and the rainfall for all the different geographical regions spread all across India for the year 2009. There is a correlation of 0.54 between the forest cover and the rainfall. This value suggests that there is a moderate relationship between them and that the rainfall is directly proportional to the forest cover.Compared to the previous year, which has a correlation of 0.53, we can see that there is not a very significant change in the values, which shows that the relationship between the forest cover and rainfall remains the same."
+					}
+					else if(a.value == 2010)
+					{
+						i.src = "4y.png"
+						i2.src = "Yearwise ForestvsRainfall/2010.png"
+						co.innerHTML = "The above graph indicates the relationship between the forest cover and the rainfall for all the different geographical regions spread all across India for the year 2010. There is a correlation of 0.47 between the forest cover and the rainfall. This value suggests that there is a moderate relationship between them and that the rainfall is directly proportional to the forest cover.Compared to the previous year, which has a correlation of 0.54, we can see that there is not a very significant change in the values, which shows that the relationship between the forest cover and rainfall remains the same."
+					}
+					else if(a.value == 2011)
+					{
+						i.src = "5y.png"
+						i2.src = "Yearwise ForestvsRainfall/2011.png"
+						co.innerHTML = "The above graph indicates the relationship between the forest cover and the rainfall for all the different geographical regions spread all across India for the year 2011. There is a correlation of 0.49 between the forest cover and the rainfall. This value suggests that there is a moderate relationship between them and that the rainfall is directly proportional to the forest cover.Compared to the previous year, which has a correlation of 0.47, we can see that there is not a very significant change in the values, which shows that the relationship between the forest cover and rainfall remains the same."
+					}
+					else if(a.value == 2012)
+					{
+						i.src = "6y.png"
+						i2.src = "Yearwise ForestvsRainfall/2012.png"
+						co.innerHTML = "The above graph indicates the relationship between the forest cover and the rainfall for all the different geographical regions spread all across India for the year 2012. There is a correlation of 0.56 between the forest cover and the rainfall. This value suggests that there is a moderate relationship between them and that the rainfall is directly proportional to the forest cover.Compared to the previous year, which has a correlation of 0.49, we can see that there is not a very significant change in the values, which shows that the relationship between the forest cover and rainfall remains the same."
+					}
+					else if(a.value == 2013)
+					{
+						i.src = "7y.png"
+						i2.src = "Yearwise ForestvsRainfall/2013.png"
+						co.innerHTML = "The above graph indicates the relationship between the forest cover and the rainfall for all the different geographical regions spread all across India for the year 2013. There is a correlation of 0.55 between the forest cover and the rainfall. This value suggests that there is a moderate relationship between them and that the rainfall is directly proportional to the forest cover.Compared to the previous year, which has a correlation of 0.56, we can see that there is not a very significant change in the values, which shows that the relationship between the forest cover and rainfall remains the same."
+					}
+					b = document.getElementById("region")
+					b.onclick = regionfn
+				}
+				function regionfn()
+				{
+					if(a.value == 2007)
+					{
+
+						if(b.value == "Northernmountains")
+						{
+							i.src = "1.png"
+							i2.src = "NM2007.png"
+							co.innerHTML = "The northern mountains consists of the regions of Arunachal Pradesh , Assam , Meghalaya , Manipur , Mizoram , Nagaland , Tripura , Sikkim , Uttaranchal , Himachal Pradesh and Jammu and Kashmir. These regions consist of Alpine and Coniferrous trees which dont contribute much to rainfall by evapotranspiration. The showers in these areas are orographic rainfall which depend more on the altitude of the region. The south west monsson from the Indian ocean also affects the rainfall in the region. It is barely affected by the forest cover.The annual rainfall in the northern mountains in the year of 2007 is 77285 mm and the forest area is 42.79%. From the corelation coefficient for the year of 2007,we conclude a bad degree of linear dependence of forest cover and rainfall in the northern mountains of India. "
+						}
+						else if(b.value == "Easternplains")
+						{
+							i.src = "8.png"
+							i2.src = "EP2007.png"
+							co.innerHTML = "The eastern plains of india consist mainly of the states of Bihar and West Bengal. The main forests in the area are tropical decidious moist forest causing large amounts of evapotranspiration. Rainfall in these areas are also majorly affected by the south west monsoon in the months of June to August soon after the peak summer.The total forest cover in the eastern plains 16.30% whereas the total annual rainfall is 20576.6 mm.From the corelation coefficient for the year of 2007,we conclude a moderate degree of linear dependence of forest cover and rainfall in the eastern plains of India being 0.676."
+						}
+						else if(b.value == "Westernplains")
+						{
+							i.src = "15.png"
+							i2.src = "WP2007.png"
+							co.innerHTML = "The western plains of India consist of Rajasthan and parts of Gujarat. The main forests in these areas are tropical thorn. Although there forests dont undergo much evapotranspiration, they are the main source of rainfall in the region.The southwestern summer monsoons originating from the Indian ocean that occur from July through September are drawn towards the Himalayas causing less to none amount of rainfall in the western plains.The total forest cover in the year is 5.3% and the total annual rainfall for the year is 7008.1 mm. Generally, more the forest area more the rainfall in these regions. It is affected very little by the monsoon.From the corelation coefficient 0.60 for the year of 2007,we conclude that the degree of linear dependence of forest cover and rainfall in the western plains of India be moderately strong."
+						}
+						else if(b.value == "Northernplains")
+						{
+							i.src = "22.png"
+							i2.src = "NP2007.png"
+							co.innerHTML = "The northern plains consist of the regions of Uttar Pradesh , Haryana, Chandigarh , Delhi and Punjab. The main forests in these regions are tropical dry deciduous and tropical thorn. There forests do not contribute much to rainfall by evapotranspiration and hence the bad corelation. Northern plains receive rains by South West Monsoons. These Monsoons being the branch of Bay of Bengal Monsoon move westwards along the Himalayas.The total average forest cover is 2.65 % whereas the total annual rainfall in the region is 10965.2 mm.From the corelation coefficient for the year of 2007,0.22,we conclude that the degree of linear dependence of forest cover and rainfall in the northern plains of India is not very strong. "
+						}
+						else if(b.value == "Centralhighlands")
+						{
+							i.src = "29.png"
+							i2.src = "CH2007.png"
+							co.innerHTML = "The Central Highlands consist of Madhya Pradesh,parts of Rajasthan and Uttar Pradesh. The total annual rainfall in the Central highlands in the year of 2007 is 12764.2 mm. The percentage of forest cover in the Central highlands in 2007 is 21.71%.From the correlation coefficient,0.42,for the year of 2007,we concluded that the degree of linear dependence of forest cover and rainfall in the Central highlands of India is not very strong. The main forests are Tropical thorn and Tropical dry decidious which do not contribute much to rainfall by the process of evapotranspiration. The Central Highlands recieve rainfall mainly due to the the South-west monsoon from the Bay of Bengal in the summer and Northeast monsoon in the winter."
+						}
+						else if(b.value == "Deccanplateau")
+						{
+							i.src = "36.png"
+							i2.src = "DP2007.png"
+							co.innerHTML = "The Deccan Plateau consist of Orissa, Jharkhand,Madhya Pradesh, Gujarat, Maharashtra, Chattisgarh, Andhra Pradesh, Tamil Nadu , Pondicherry, Karanataka and Kerala.The main forests are Tropical Deciduous moist, Moist Tropical Evergreen. These regions also have Tropical dry deciduous and Tropical Thorn.The regions with the former types of forests undergo much evapotranspiration and contribute to th rainfall of the region. Tropical thorn an tropical dry deciduous don't contribute as much. Some parts of the Deccan Plateau recieves lots of rainfalls in the months of June - September from the south west Bay of Bengal monsoon.The total annual rainfall in the Deccan Plateau in the year of 2007 is 82983.7 mm. The percentage of forest cover in the Deccan Plateau in 2007 is 22.61%.From the correlation coefficient,0.68,for the year of 2007,we concluded that the degree of linear dependence of forest cover and rainfall in the Deccan Plateau of India is moderately strong."
+						}
+						else if(b.value == "Coastal")
+						{
+							i.src = "43.png"
+							i2.src = "CO2007.png"
+							co.innerHTML = "The Coastal regions consist of West Bengal, Orissa, Gujarat, Daman and Diu, Maharashtra, Goa, Parts of Tamil Nadu, Karanataka and Kerala.The main forests on the western coast are Moist Tropical Evergreen forests and Wet Temperate. On the eastern coast, we mainly have Tropical Deciduous Moist and Tropical Deciduous dry.These types of forest undergo much evapotranspiration contributing much to the rainfall in the area. The total annual rainfall in the Coastal regions in the year of 2007 is 41046.2 mm. The percentage of forest cover in the Coastal regions in 2007 is 20.007%. From the correlation coefficient,0.794,for the year of 2007,we concluded that the degree of linear dependence of forest cover and rainfall in the Coastal regions of India is strong. "
+						}
+						
+						
+					}
+					else if(a.value == 2008)
+					{
+				
+						if(b.value == "Northernmountains")
+						{
+							i.src = "2.png"
+							i2.src = "NM2008.png"
+							co.innerHTML = "The northern mountains consists of the regions of Arunachal Pradesh , Assam , Meghalaya , Manipur , Mizoram , Nagaland , Tripura , Sikkim , Uttaranchal , Himachal Pradesh and Jammu and Kashmir.These regions consist of Alpine and Coniferrous trees which dont contribute much to rainfall by evapotranspiration. The showers in these areas are orographic rainfall which depend more on the altitude of the region. The south west monsson from the Indian ocean also affects the rainfall in the region. The annual rainfall in the northern mountains in the year of 2008 is 70830.9 mm and the forest area is 43.32%. The forest cover has increased whereas the rainfall has decreased. 	In regions such as Goalpara and Karimganj the rainfall has reduced from 2344 mm to 467 mm and 3471.5 mm to 983.2 mm. In Kupwara on the other hand, the rainfall has increased from 651 mm to 2383 mm.We can conclude that the monsoon affected the regions of Assam less as compared to Jammu and Kashmir. This has a major affect on the correlation between forest cover and rainfall. From the corelation coefficient for the year of 2008,we conclude a very bad degree of linear dependence of forest cover and rainfall in the northern mountains of India. Rainfall is not affected by the forest cover in the region."
+						}
+						else if(b.value == "Easternplains")
+						{
+							i.src = "9.png"
+							i2.src = "EP2008.png"
+							co.innerHTML = "The eastern plains of india consist mainly of the states of Bihar and West Bengal. The main forests in the area are tropical decidious moist forest causing large amounts of evapotranspiration. Rainfall in these areas are also majorly affected by the south west monsoon in the months of June to August soon after the peak summer. The total forest cover in the eastern plains 16.31% whereas the total annual rainfall is 19170.5 mm. The forest cover has increased by 0.01% whereas the rainfall has decreased. This could be because of a lighter monsoon in some parts of the eastern plains. This has also caused a significant increase in the correlation coefficient.  From the corelation coefficient 0.80 for the year of 2008,we conclude that the linear dependence of forest cover and rainfall in the eastern plains of India is strong."
+
+						}
+						else if(b.value == "Westernplains")
+						{
+							i.src = "16.png"
+							i2.src = "WP2008.png"
+							co.innerHTML = "The western plains of India consist of Rajasthan and parts of Gujarat. The main forests in these areas are tropical thorn. Although there forests dont undergo much evapotranspiration, they are the main source of rainfall in the region.The southwestern summer monsoons originating from the Indian ocean that occur from July through September are drawn towards the Himalayas causing less to none amount of rainfall in the western plains.The total forest cover in the year is 5.3% and the total annual rainfall for the year is 6143.6 mm. The forest cover has remained the same but the rainfall has slightly decreased. It is affected very little by the monsoon but the slight fall could be because of a lighter monsoon.From the corelation coefficient 0.51 for the year of 2008,we conclude that the degree of linear dependence of forest cover and rainfall in the western plains of India be moderately strong."
+						}
+						else if(b.value == "Northernplains")
+						{
+							i.src = "23.png"
+							i2.src = "NP2008.png"
+							co.innerHTML = "The northern plains consist of the regions of Uttar Pradesh , Haryana, Chandigarh , Delhi and Punjab. The main forests in these regions are tropical dry deciduous and tropical thorn. There forests do not contribute much to rainfall by evapotranspiration and hence the bad corelation. Northern plains receive rains by South West Monsoons. These Monsoons being the branch of Bay of Bengal Monsoon move westwards along the Himalayas.The total average forest cover is 2.78 % whereas the total annual rainfall in the region is 14639.2 mm. The forest area has increased and so has the total rainfall.The corelation coefficient is similar to that of the previous year. From the corelation coefficient for the year of 2008,0.21,we conclude that the degree of linear dependence of forest cover and rainfall in the northern plains of India is not very strong. "
+						}
+						else if(b.value == "Centralhighlands")
+						{
+							i.src = "30.png"
+							i2.src = "CH2008.png"
+							co.innerHTML = "The Central Highlands consist of Madhya Pradesh,parts of Rajasthan and Uttar Pradesh. The main forests are Tropical thorn and Tropical dry decidious which do not contribute much to rainfall by the process of evapotranspiration. The Central Highlands recieve rainfall mainly due to the the South-west monsoon from the Bay of Bengal in the summer and Northeast monsoon in the winter.The total annual rainfall in the Central highlands in the year of 2008 is 12946.9 mm. The percentage of forest cover in the Central highlands in 2008 is 23.37%. The forest cover has increased and so has the rainfall.From the correlation coefficient,0.49,for the year of 2008,we concluded that the degree of linear dependence of forest cover and rainfall in the Central highlands of India is a little stronger. "
+						}
+						
+						else if(b.value == "Deccanplateau")
+						{
+							i.src = "37.png"
+							i2.src = "DP2008.png"
+							co.innerHTML = "The Deccan Plateau consist of Orissa, Jharkhand,Madhya Pradesh, Gujarat, Maharashtra, Chattisgarh, Andhra Pradesh, Tamil Nadu , Pondicherry, Karanataka and Kerala.The main forests are Tropical Deciduous moist, Moist Tropical Evergreen. These regions also have Tropical dry deciduous and Tropical Thorn.The regions with the former types of forests undergo much evapotranspiration and contribute to th rainfall of the region. Tropical thorn an tropical dry deciduous don't contribute as much. Some parts of the Deccan Plateau recieves lots of rainfalls in the months of June - September from the south west Bay of Bengal monsoon.The total annual rainfall in the Deccan Plateau in the year of 2008 is 75918.1 mm. The percentage of forest cover in the Deccan Plateau in 2008 is 21.71%. The forest area gas decreased and so has the rainfall. This gives us a similar correlation coefficient as the previous year.From the correlation coefficient,0.73,for the year of 2008,we concluded that the degree of linear dependence of forest cover and rainfall in the Deccan Plateau of India is a little bit stronger."
+						}
+						else if(b.value == "Coastal")
+						{
+							i.src = "44.png"
+							i2.src = "CO2008.png"
+							co.innerHTML = "The Coastal regions consist of West Bengal, Orissa, Gujarat, Daman and Diu, Maharashtra, Goa, Parts of Tamil Nadu, Karanataka and Kerala.The main forests on the western coast are Moist Tropical Evergreen forests and Wet Temperate. On the eastern coast, we mainly have Tropical Deciduous Moist and Tropical Deciduous dry.These types of forest undergo much evapotranspiration contributing much to the rainfall in the area. The total annual rainfall in the Coastal regions in the year of 2008 is 37451.1 mm. The percentage of forest cover in the Coastal in 2008 is 20.06%. The forest cover has slighty decreased and so has the rainfall. From the correlation coefficient,0.7905,for the year of 2008,we concluded that the degree of linear dependence of forest cover and rainfall in the Coastal regions of India is strong. This is similar to the correlation in previous year."
+							
+						}
+						
+						
+					}
+					else if(a.value == 2009)
+					{
+						
+						if(b.value == "Northernmountains")
+						{
+							i.src = "3.png"
+							i2.src = "NM2009.png"
+							co.innerHTML = "The northern mountains consists of the regions of Arunachal Pradesh , Assam , Meghalaya , Manipur , Mizoram , Nagaland , Tripura , Sikkim , Uttaranchal , Himachal Pradesh and Jammu and Kashmir.These regions consist of Alpine and Coniferrous trees which dont contribute much to rainfall by evapotranspiration. The showers in these areas are orographic rainfall which depend more on the altitude of the region. The south west monsson from the Indian ocean also affects the rainfall in the region.The annual rainfall in the northern mountains in the year of 2009 is 59669.5 mm and the forest area is 43.67%. The forest cover has increased whereas the rainfall has decreased. This causes a slight increase in the correlation coefficient but not by a significant amount.From the corelation coefficient for the year of 2009,we conclude a bad degree of linear dependence of forest cover and rainfall in the northern mountains of India. Rainfall is not affected by the forest cover in the region."
+						}
+						else if(b.value == "Easternplains")
+						{
+							i.src = "10.png"
+							i2.src = "EP2009.png"
+							co.innerHTML = "The eastern plains of india consist mainly of the states of Bihar and West Bengal. The main forests in the area are tropical decidious moist forest causing large amounts of evapotranspiration. Rainfall in these areas are also majorly affected by the south west monsoon in the months of June to August soon after the peak summer.The total forest cover in the eastern plains 16.69% whereas the total annual rainfall is 15131.14 mm. The forest cover has slightly increased by 0.01% whereas the rainfall has slightly decreased. This could be because of a lighter monsoon in some parts of the eastern plains. This has also caused a slight increase in the correlation coefficient.  From the corelation coefficient 0.85 for the year of 2009,we conclude that the linear dependence of forest cover and rainfall in the eastern plains of India is strong."
+
+						}
+						else if(b.value == "Westernplains")
+						{
+							i.src = "17.png"
+							i2.src = "WP2009.png"
+							co.innerHTML = "The western plains of India consist of Rajasthan and parts of Gujarat. The main forests in these areas are tropical thorn. Although there forests dont undergo much evapotranspiration, they are the main source of rainfall in the region.The southwestern summer monsoons originating from the Indian ocean that occur from July through September are drawn towards the Himalayas causing less to none amount of rainfall in the western plains.The total forest cover in the year is 5.33% and the total annual rainfall for the year is 5159 mm. The forest cover has remained the same but the rainfall has decreased. It is affected very little by the monsoon but the slight fall could be because of a lighter monsoon. Although, it appears as though regions with more forest area have recieved more rainfall causing an increase in the corelation coefficient. From the corelation coefficient 0.65 for the year of 2009,we conclude that the degree of linear dependence of forest cover and rainfall in the western plains of India be moderately strong."
+						}
+						else if(b.value == "Northernplains")
+						{
+							i.src = "24.png"
+							i2.src = "NP2009.png"
+							co.innerHTML = "The northern plains consist of the regions of Uttar Pradesh , Haryana, Chandigarh , Delhi and Punjab. The main forests in these regions are tropical dry deciduous and tropical thorn. There forests do not contribute much to rainfall by evapotranspiration and hence the bad corelation. Northern plains receive rains by South West Monsoons. These Monsoons being the branch of Bay of Bengal Monsoon move westwards along the Himalayas.The total average forest cover is 2.75 % whereas the total annual rainfall in the region is 8591.2 mm. The forest area has slightly decreased and so has the total rainfall.The corelation coefficient has increased because of this. Although, it is similar to that of the previous year. From the corelation coefficient for the year of 2009,0.31,we conclude that the degree of linear dependence of forest cover and rainfall in the northern plains of India is not very strong. "
+						}
+						else if(b.value == "Centralhighlands")
+						{
+							i.src = "31.png"
+							i2.src = "CH2009.png"
+							co.innerHTML = "The Central Highlands consist of Madhya Pradesh,parts of Rajasthan and Uttar Pradesh. The main forests are Tropical thorn and Tropical dry decidious which do not contribute much to rainfall by the process of evapotranspiration. The Central Highlands recieve rainfall mainly due to the the South-west monsoon from the Bay of Bengal in the summer and Northeast monsoon in the winter.The total annual rainfall in the Central highlands in the year of 2009 is 11909.3 mm. The percentage of forest cover in the Central highlands in 2009 is 23.379%. The forest cover has increased but there is a reduce in rainfall.From the correlation coefficient,0.722,for the year of 2009,we concluded that the degree of linear dependence of forest cover and rainfall in the Central highlands of India is much stronger. In many districts such as Ajmer , Alwar, Damoh and Katni, the rainfall has drastically reduced by half. This could be because the central highlands were not affected by the South west monsoon as much as it was affected the previous year."
+						}
+						else if(b.value == "Deccanplateau")
+						{
+							i.src = "38.png"
+							i2.src = "DP2009.png"
+							co.innerHTML = "The Deccan Plateau consist of Orissa, Jharkhand,Madhya Pradesh, Gujarat, Maharashtra, Chattisgarh, Andhra Pradesh, Tamil Nadu , Pondicherry, Karanataka and Kerala.The main forests are Tropical Deciduous moist, Moist Tropical Evergreen. These regions also have Tropical dry deciduous and Tropical Thorn.The regions with the former types of forests undergo much evapotranspiration and contribute to th rainfall of the region. Tropical thorn an tropical dry deciduous don't contribute as much. Some parts of the Deccan Plateau recieves lots of rainfalls in the months of June - September from the south west Bay of Bengal monsoon.The total annual rainfall in the Deccan Plateau in the year of 2009 is 69757.3 mm. The percentage of forest cover in the Deccan Plateau in 2009 is 21.90%. The forest area has increased whereas the rainfall has decreased. This could be because of a lighter monsoon in the region which affects the correlation coefficient.From the correlation coefficient,0.58,for the year of 2009,we concluded that the degree of linear dependence of forest cover and rainfall in the Deccan Plateau of India is a little weaker than that of the previous year."
+						}
+						else if(b.value == "Coastal")
+						{
+							i.src = "45.png"
+							i2.src = "CO2009.png"
+							co.innerHTML = "The Coastal regions consist of West Bengal, Orissa, Gujarat, Daman and Diu, Maharashtra, Goa, Parts of Tamil Nadu, Karanataka and Kerala.The main forests on the western coast are Moist Tropical Evergreen forests and Wet Temperate. On the eastern coast, we mainly have Tropical Deciduous Moist and Tropical Deciduous dry.These types of forest undergo much evapotranspiration contributing much to the rainfall in the area. The total annual rainfall in the Coastal regions in the year of 2009 is 71030.7 mm. The percentage of forest cover in the Coastal regions in 2009 is 20.11%. The forest cover has slighty increased but there is a slight increase in the rainfall. This could be because of a stronger monsoon in the year. From the correlation coefficient,0.756,for the year of 2009,we concluded that the degree of linear dependence of forest cover and rainfall in the Coastal regions of India is strong. This is similar to the correlation in previous year."
+						}
+						
+						
+					}
+					else if(a.value == 2010)
+					{
+					
+						if(b.value == "Northernmountains")
+						{
+							i.src = "4.png"
+							i2.src = "NM2010.png"
+							co.innerHTML = "The northern mountains consists of the regions of Arunachal Pradesh , Assam , Meghalaya , Manipur , Mizoram , Nagaland , Tripura , Sikkim , Uttaranchal , Himachal Pradesh and Jammu and Kashmir.These regions consist of Alpine and Coniferrous trees which dont contribute much to rainfall by evapotranspiration. The showers in these areas are orographic rainfall which depend more on the altitude of the region. The south west monsson from the Indian ocean also affects the rainfall in the region.The annual rainfall in the northern mountains in the year of 2010 is 80077.1 mm and the forest area is 41.47%. The forest cover has decreased by 2 percent and so has the rainfall. This causes a slight increase in the correlation coefficient, 0.11 but not by a significant amount. It is similar to that of the previous year. From the corelation coefficient for the year of 2010,we conclude a bad degree of linear dependence of forest cover and rainfall in the northern mountains of India. Rainfall is not affected by the forest cover in the region."
+						}
+						else if(b.value == "Easternplains")
+						{
+							i.src = "11.png"
+							i2.src = "EP2010.png"
+							co.innerHTML = "The eastern plains of india consist mainly of the states of Bihar and West Bengal. The main forests in the area are tropical decidious moist forest causing large amounts of evapotranspiration. Rainfall in these areas are also majorly affected by the south west monsoon in the months of June to August soon after the peak summer.The total forest cover in the eastern plains 15.36% whereas the total annual rainfall is 1199.55 mm. The forest cover has decreased by 1.3% and so has the rainfall . This has also caused a slight decrease in the correlation coefficient for the year because of an irregular monsoon in certain areas. The correlation coefficient is although similar to that of the previous year.  From the corelation coefficient 0.77 for the year of 2010,we conclude that the linear dependence of forest cover and rainfall in the eastern plains of India is strong."
+
+						}
+						else if(b.value == "Westernplains")
+						{
+							i.src = "18.png"
+							i2.src = "WP2010.png"
+							co.innerHTML = "The western plains of India consist of Rajasthan and parts of Gujarat. The main forests in these areas are tropical thorn. Although there forests dont undergo much evapotranspiration, they are the main source of rainfall in the region.The southwestern summer monsoons originating from the Indian ocean that occur from July through September are drawn towards the Himalayas causing less to none amount of rainfall in the western plains.The total forest cover in the year is 5.33% and the total annual rainfall for the year is 8040.2 mm. The forest cover has remained the same but the rainfall has increased. It is affected very little by the monsoon but the slight increase could be because of a heavier monsoon. Although, it appears as though regions with more forest area have recieved more rainfall causing a slight increase in the corelation coefficient as compared to the previous year. From the corelation coefficient 0.67 for the year of 2010,we conclude that the degree of linear dependence of forest cover and rainfall in the western plains of India be moderately strong."
+						}
+						else if(b.value == "Northernplains")
+						{
+							i.src = "25.png"
+							i2.src = "NP2010.png"
+							co.innerHTML = "The northern plains consist of the regions of Uttar Pradesh , Haryana, Chandigarh , Delhi and Punjab. The main forests in these regions are tropical dry deciduous and tropical thorn. There forests do not contribute much to rainfall by evapotranspiration and hence the bad corelation. Northern plains receive rains by South West Monsoons. These Monsoons being the branch of Bay of Bengal Monsoon move westwards along the Himalayas.The total average forest cover is 2.73 % whereas the total annual rainfall in the region is 12485 mm. The forest area has slightly decreased but the total rainfall has increased. This could be because of a heavier monsoon in the region. The corelation has increased by a huge amount because there is more rainfall in the regions with more forest area. This differs a lot from the previous years. From the corelation coefficient for the year of 2010,0.80,we conclude that the degree of linear dependence of forest cover and rainfall in the northern plains of India is strong but not accurate. "
+						}
+						else if(b.value == "Centralhighlands")
+						{
+							i.src = "32.png"
+							i2.src = "CH2010.png"
+							co.innerHTML = "The Central Highlands consist of Madhya Pradesh,parts of Rajasthan and Uttar Pradesh. The main forests are Tropical thorn and Tropical dry decidious which do not contribute much to rainfall by the process of evapotranspiration. The Central Highlands recieve rainfall mainly due to the the South-west monsoon from the Bay of Bengal in the summer and Northeast monsoon in the winter.The total annual rainfall in the Central highlands in the year of 2010 is 13472.8 mm. The percentage of forest cover in the Central highlands in 2010 is 23.382%. The forest cover has increased and so has the rainfall.From the correlation coefficient,0.38,for the year of 2010,we concluded that the degree of linear dependence of forest cover and rainfall in the Central highlands of India is not strong. In many districts such as Ajmer , Alwar, Damoh and Katni, the rainfall that had drastically reduced by half went back to being similar to the rainfall in 2008. "
+						}
+						else if(b.value == "Deccanplateau")
+						{
+							i.src = "39.png"
+							i2.src = "DP2010.png"
+							co,innerHTML = "The Deccan Plateau consist of Orissa, Jharkhand,Madhya Pradesh, Gujarat, Maharashtra, Chattisgarh, Andhra Pradesh, Tamil Nadu , Pondicherry, Karanataka and Kerala.The main forests are Tropical Deciduous moist, Moist Tropical Evergreen. These regions also have Tropical dry deciduous and Tropical Thorn.The regions with the former types of forests undergo much evapotranspiration and contribute to th rainfall of the region. Tropical thorn an tropical dry deciduous don't contribute as much. Some parts of the Deccan Plateau recieves lots of rainfalls in the months of June - September from the south west Bay of Bengal monsoon.The total annual rainfall in the Deccan Plateau in the year of 2010 is 85461.8 mm. The percentage of forest cover in the Deccan Plateau in 2010 is 21.54%. The forest area has decreased sightly whereas the rainfall has increased.From the correlation coefficient,0.54,for the year of 2010,we concluded that the degree of linear dependence of forest cover and rainfall in the Deccan Plateau of India is almost similar but a little weaker than that of the previous year."
+						}
+						else if(b.value == "Coastal")
+						{
+							i.src = "46.png"
+							i2.src = "CO2010.png"
+							co.innerHTML = "The Coastal regions consist of West Bengal, Orissa, Gujarat, Daman and Diu, Maharashtra, Goa, Parts of Tamil Nadu, Karanataka and Kerala.The main forests on the western coast are Moist Tropical Evergreen forests and Wet Temperate. On the eastern coast, we mainly have Tropical Deciduous Moist and Tropical Deciduous dry.These types of forest undergo much evapotranspiration contributing much to the rainfall in the area. The total annual rainfall in the Coastal regions in the year of 2010 is 49742.5 mm. The percentage of forest cover in the Coastal region in 2010 is 19.24%. The forest cover has slighty decreased but there is a  increase in the rainfall. This could be because of a stronger monsoon in the year. From the correlation coefficient,0.822,for the year of 2010,we concluded that the degree of linear dependence of forest cover and rainfall in the Coastal regions of India is strong. "
+						}
+					}
+					else if(a.value == 2011)
+					{
+					
+						if(b.value == "Northernmountains")
+						{
+							i.src = "5.png"
+							i2.src = "NM2011.png"
+							co.innerHTML = "The northern mountains consists of the regions of Arunachal Pradesh , Assam , Meghalaya , Manipur , Mizoram , Nagaland , Tripura , Sikkim , Uttaranchal , Himachal Pradesh and Jammu and Kashmir.These regions consist of Alpine and Coniferrous trees which dont contribute much to rainfall by evapotranspiration. The showers in these areas are orographic rainfall which depend more on the altitude of the region. The south west monsson from the Indian ocean also affects the rainfall in the region.The annual rainfall in the northern mountains in the year of 2011 is 62515.8 mm and the forest area is 41.44%. The forest cover has decreased by a slight amount and so has the rainfall. This causes a slight increase in the correlation coefficient, 0.12 but not by a significant amount. It is similar to that of the previous year. From the corelation coefficient for the year of 2011,we conclude a bad degree of linear dependence of forest cover and rainfall in the northern mountains of India. Rainfall is not affected by the forest cover in the region."
+						}
+						else if(b.value == "Easternplains")
+						{
+							i.src = "12.png"
+							i2.src = "EP2011.png"
+							co.innerHTML = "The eastern plains of india consist mainly of the states of Bihar and West Bengal. The main forests in the area are tropical decidious moist forest causing large amounts of evapotranspiration. Rainfall in these areas are also majorly affected by the south west monsoon in the months of June to August soon after the peak summer.The total forest cover in the eastern plains 15.37% whereas the total annual rainfall is 18510.54 mm. The forest cover has slightly increased and so has the rainfall . This has caused an increase in the correlation coefficient for the year. The places with more forest area have recieved more rainfall in the year.  From the corelation coefficient 0.91 for the year of 2011,we conclude that the linear dependence of forest cover and rainfall in the eastern plains of India is very strong."
+
+						}
+						else if(b.value == "Westernplains")
+						{
+							i.src = "19.png"
+							i2.src = "WP2011.png"
+							co.innerHTML = "The western plains of India consist of Rajasthan and parts of Gujarat. The main forests in these areas are tropical thorn. Although there forests dont undergo much evapotranspiration, they are the main source of rainfall in the region.The southwestern summer monsoons originating from the Indian ocean that occur from July through September are drawn towards the Himalayas causing less to none amount of rainfall in the western plains.The total forest cover in the year is 5.34% and the total annual rainfall for the year is 10296.1 mm. The forest cover has slightly increased and so has the rainfall. It is affected very little by the monsoon but the slight increase could be because of a heavier monsoon. Although, it appears as though regions with more forest area have recieved more rainfall causing an increase in the corelation coefficient as compared to the previous year. From the corelation coefficient 0.89 for the year of 2011,we conclude that the degree of linear dependence of forest cover and rainfall in the western plains of India be strong."
+						}
+						else if(b.value == "Northernplains")
+						{
+							i.src = "26.png"
+							i2.src = "NP2011.png"
+							co.innerHTML = "The northern plains consist of the regions of Uttar Pradesh , Haryana, Chandigarh , Delhi and Punjab. The main forests in these regions are tropical dry deciduous and tropical thorn. There forests do not contribute much to rainfall by evapotranspiration and hence the bad corelation. Northern plains receive rains by South West Monsoons. These Monsoons being the branch of Bay of Bengal Monsoon move westwards along the Himalayas.The total average forest cover is 2.76 % whereas the total annual rainfall in the region is 11882 mm. The forest area has slightly increased but the total rainfall has decreased. The corelation coefficient is similar to that of the previous years with 2010 as an exception. From the corelation coefficient for the year of 2011,0.20,we conclude that the degree of linear dependence of forest cover and rainfall in the northern plains of India is not very strong"
+						}
+						else if(b.value == "Centralhighlands")
+						{
+							i.src = "33.png"
+							i2.src = "CH2011.png"
+							co.innerHTML = "The Central Highlands consist of Madhya Pradesh,parts of Rajasthan and Uttar Pradesh. The main forests are Tropical thorn and Tropical dry decidious which do not contribute much to rainfall by the process of evapotranspiration. The Central Highlands recieve rainfall mainly due to the the South-west monsoon from the Bay of Bengal in the summer and Northeast monsoon in the winter.The total annual rainfall in the Central highlands in the year of 2011 is 17696.2 mm. The percentage of forest cover in the Central highlands in 2011 is 23.385%. The forest cover has increased by a slight amount and so has the rainfall.From the correlation coefficient,0.60,for the year of 2011,we concluded that the degree of linear dependence of forest cover and rainfall in the Central highlands of India moderately strong. In many districts such as Guna , Panna, Satna and Sidhi, the rainfall that had drastically increased by 50%. This could be because of a heavier monsoon in the year. As the forest cover has also increased, the correlation is higher."
+						}
+						else if(b.value == "Deccanplateau")
+						{
+							i.src = "40.png"
+							i2.src = "DP2011.png"
+							co.innerHTML = "The Deccan Plateau consist of Orissa, Jharkhand,Madhya Pradesh, Gujarat, Maharashtra, Chattisgarh, Andhra Pradesh, Tamil Nadu , Pondicherry, Karanataka and Kerala.The main forests are Tropical Deciduous moist, Moist Tropical Evergreen. These regions also have Tropical dry deciduous and Tropical Thorn.The regions with the former types of forests undergo much evapotranspiration and contribute to th rainfall of the region. Tropical thorn an tropical dry deciduous don't contribute as much. Some parts of the Deccan Plateau recieves lots of rainfalls in the months of June - September from the south west Bay of Bengal monsoon.The total annual rainfall in the Deccan Plateau in the year of 2011 is 74403.8 mm. The percentage of forest cover in the Deccan Plateau in 2011 is 21.53%. The forest area has decreased sightly whereas the rainfall has also decreased. We hence observe an increase in the correlation coefficient.From the correlation coefficient,0.66,for the year of 2011,we concluded that the degree of linear dependence of forest cover and rainfall in the Deccan Plateau of India is moderately strong."
+						}
+						else if(b.value == "Coastal")
+						{
+							i.src = "47.png"
+							i2.src = "CO2011.png"
+							co.innerHTML = "The Coastal regions consist of West Bengal, Orissa, Gujarat, Daman and Diu, Maharashtra, Goa, Parts of Tamil Nadu, Karanataka and Kerala.The main forests on the western coast are Moist Tropical Evergreen forests and Wet Temperate. On the eastern coast, we mainly have Tropical Deciduous Moist and Tropical Deciduous dry.These types of forest undergo much evapotranspiration contributing much to the rainfall in the area. The total annual rainfall in the Coastal regions in the year of 2011 is 39510.4 mm. The percentage of forest cover in the Coastal regions in 2011 is 19.32%. The forest cover has slighty increased but there is a  decrease in the rainfall. From the correlation coefficient,0.800,for the year of 2011,we concluded that the degree of linear dependence of forest cover and rainfall in the Coastal regions of India is strong. This is similar to the correlation in 2009."
+						}
+						
+						
+					}
+					else if(a.value == 2012)
+					{
+					
+						if(b.value == "Northernmountains")
+						{
+							i.src = "6.png"
+							i2.src = "NM2012.png"
+							co.innerHTML = "The northern mountains consists of the regions of Arunachal Pradesh , Assam , Meghalaya , Manipur , Mizoram , Nagaland , Tripura , Sikkim , Uttaranchal , Himachal Pradesh and Jammu and Kashmir.These regions consist of Alpine and Coniferrous trees which dont contribute much to rainfall by evapotranspiration. The showers in these areas are orographic rainfall which depend more on the altitude of the region. The south west monsson from the Indian ocean also affects the rainfall in the region.The annual rainfall in the northern mountains in the year of 2012 is 74233.3 mm and the forest area is 41.38%. The forest cover has decreased by a slight amount whereas the rainfall has increased. This although does causes a slight increase in the correlation coefficient, 0.14 but not by a significant amount. This behaviour could be because of a slightly heavier monsoon in certain areas but does not affect the correlation much. The correlation coefficient is similar to that of the previous year. From the corelation coefficient for the year of 2012,we conclude a bad degree of linear dependence of forest cover and rainfall in the northern mountains of India. Rainfall is not affected by the forest cover in the region."
+						}
+						else if(b.value == "Easternplains")
+						{
+							i.src == "13.png"
+							i2.src = "EP2012.png"
+							co.innerHTML = "The eastern plains of india consist mainly of the states of Bihar and West Bengal. The main forests in the area are tropical decidious moist forest causing large amounts of evapotranspiration. Rainfall in these areas are also majorly affected by the south west monsoon in the months of June to August soon after the peak summer.The total forest cover in the eastern plains 16.72% whereas the total annual rainfall is 17195.4 mm. The forest cover has increased by a significant amount whereas the total rainfall has decreased as compared to the previous year. This has caused a slight drop in the correlation coefficient for the year but it is still very strong. The places with more forest area have recieved more rainfall in the year but there wasn't a very heavy monsoon causing a slight drop.  From the corelation coefficient 0.87 for the year of 2012,we conclude that the linear dependence of forest cover and rainfall in the eastern plains of India is  strong."
+
+						}
+						else if(b.value == "Westernplains")
+						{
+							i.src = "20.png"
+							i2.src = "WP2012.png"
+							co.innerHTML = "The western plains of India consist of Rajasthan and parts of Gujarat. The main forests in these areas are tropical thorn. Although there forests dont undergo much evapotranspiration, they are the main source of rainfall in the region.The southwestern summer monsoons originating from the Indian ocean that occur from July through September are drawn towards the Himalayas causing less to none amount of rainfall in the western plains.The total forest cover in the year is 5.34% and the total annual rainfall for the year is 7947.8 mm. The forest cover has remained same whereas the rainfall has decreased. Rainfall is affected very little by the monsoon but the slight decrease could be because of a lighter monsoon. Although, it appears as though not as many regions with more forest area have recieved more rainfall as the previous year causing a decrease in the corelation coefficient. From the corelation coefficient 0.63 for the year of 2012,we conclude that the degree of linear dependence of forest cover and rainfall in the western plains of India be moderately strong."
+						}
+						else if(b.value == "Northernplains")
+						{
+							i.src = "27.png"
+							i2.src = "NP2012.png"
+							co.innerHTML = "The northern plains consist of the regions of Uttar Pradesh , Haryana, Chandigarh , Delhi and Punjab. The main forests in these regions are tropical dry deciduous and tropical thorn. There forests do not contribute much to rainfall by evapotranspiration and hence the bad corelation. Northern plains receive rains by South West Monsoons. These Monsoons being the branch of Bay of Bengal Monsoon move westwards along the Himalayas.The total average forest cover is 2.73 % whereas the total annual rainfall in the region is 9168.9 mm. The forest area has slightly decreased and so has the  total rainfall. The corelation coefficient is similar to that of the previous years with 2010 as an exception. From the corelation coefficient for the year of 2012,0.32,we conclude that the degree of linear dependence of forest cover and rainfall in the northern plains of India is not very strong"
+						}
+						else if(b.value == "Centralhighlands")
+						{
+							i.src = "34.png"
+							i2.src = "CH2012.png"
+							co.innerHTML = "The Central Highlands consist of Madhya Pradesh,parts of Rajasthan and Uttar Pradesh. The main forests are Tropical thorn and Tropical dry decidious which do not contribute much to rainfall by the process of evapotranspiration. The Central Highlands recieve rainfall mainly due to the the South-west monsoon from the Bay of Bengal in the summer and Northeast monsoon in the winter.The total annual rainfall in the Central highlands in the year of 2012 is 16052.5 mm. The percentage of forest cover in the Central highlands in 2012 is 23.35%. The forest cover has decreased and so has the rainfall.From the correlation coefficient,0.591,for the year of 2012,we concluded that the degree of linear dependence of forest cover and rainfall in the Central highlands of India moderately strong. This is similar to the correlation in 2011."
+						}
+						else if(b.value == "Deccanplateau")
+						{
+							i.src = "41.png"
+							i2.src = "DP2012.png"
+							co.innerHTML = "The Deccan Plateau consist of Orissa, Jharkhand,Madhya Pradesh, Gujarat, Maharashtra, Chattisgarh, Andhra Pradesh, Tamil Nadu , Pondicherry, Karanataka and Kerala.The main forests are Tropical Deciduous moist, Moist Tropical Evergreen. These regions also have Tropical dry deciduous and Tropical Thorn.The regions with the former types of forests undergo much evapotranspiration and contribute to th rainfall of the region. Tropical thorn an tropical dry deciduous don't contribute as much. Some parts of the Deccan Plateau recieves lots of rainfalls in the months of June - September from the south west Bay of Bengal monsoon.The total annual rainfall in the Deccan Plateau in the year of 2012 is 73258.9 mm. The percentage of forest cover in the Deccan Plateau in 2012 is 21.72%. The forest area has increased sightly whereas the rainfall has decreased by a tiny amount. The chane isn't very significant and we hence observe a very slight increase in the correlation coefficient.From the correlation coefficient,0.68,for the year of 2012,we concluded that the degree of linear dependence of forest cover and rainfall in the Deccan Plateau of India is moderately strong similar to the previous year"
+						}
+						else if(b.value == "Coastal")
+						{
+							i.src = "48.png"
+							i2.src = "CO2012.png"
+							co.innerHTML = "The Coastal regions consist of West Bengal, Orissa, Gujarat, Daman and Diu, Maharashtra, Goa, Parts of Tamil Nadu, Karanataka and Kerala.The main forests on the western coast are Moist Tropical Evergreen forests and Wet Temperate. On the eastern coast, we mainly have Tropical Deciduous Moist and Tropical Deciduous dry.These types of forest undergo much evapotranspiration contributing much to the rainfall in the area. The total annual rainfall in the Coastal regions in the year of 2012 is 32873.1 mm. The percentage of forest cover in the Coastal regions in 2012 is 19.49%. The forest cover has slighty increased but there is a  decrease in the rainfall. From the correlation coefficient,0.798,for the year of 2012,we concluded that the degree of linear dependence of forest cover and rainfall in the Coastal regions of India is strong. This is similar to the correlation in the previous year."
+						}
+						
+						
+					}
+					else if(a.value == 2013)
+					{
+
+						if(b.value == "Northernmountains")
+						{
+							i.src = "7.png"
+							i2.src = "NM2013.png"
+							co.innerHTML = "The northern mountains consists of the regions of Arunachal Pradesh , Assam , Meghalaya , Manipur , Mizoram , Nagaland , Tripura , Sikkim , Uttaranchal , Himachal Pradesh and Jammu and Kashmir.These regions consist of Alpine and Coniferrous trees which dont contribute much to rainfall by evapotranspiration. The showers in these areas are orographic rainfall which depend more on the altitude of the region. The south west monsson from the Indian ocean also affects the rainfall in the region.The annual rainfall in the northern mountains in the year of 2013 is 74444.2 mm and the forest area is 41.29%. The forest cover has decreased by a slight amount whereas the rainfall has slightly increased. This although does causes a slight increase in the correlation coefficient, 0.21 but not by a significant amount. This behaviour could be because of a heavier monsoon in certain areas but does not affect the correlation much. The correlation coefficient is quite similar to that of the previous year. From the corelation coefficient for the year of 2013,we conclude a bad degree of linear dependence of forest cover and rainfall in the northern mountains of India. Rainfall is not affected by the forest cover in the region."
+						}
+						else if(b.value == "Easternplains")
+						{
+							i.src = "14.png"
+							i2.src = "EP2013.png"
+							co.innerHTML = "The eastern plains of india consist mainly of the states of Bihar and West Bengal. The main forests in the area are tropical decidious moist forest causing large amounts of evapotranspiration. Rainfall in these areas are also majorly affected by the south west monsoon in the months of June to August soon after the peak summer.The total forest cover in the eastern plains 18% whereas the total annual rainfall is 15940.1 mm. The forest cover has increased by 2 percent whereas the total rainfall has decreased as compared to the previous year. This has caused a 0.01 drop in the correlation coefficient for the year but it is still very strong. The places with more forest area have recieved more rainfall in the year but there wasn't a very heavy monsoon causing a slight drop. From the corelation coefficient 0.86 for the year of 2013,we conclude that the linear dependence of forest cover and rainfall in the eastern plains of India is  strong."
+						}
+						else if(b.value == "Westernplains")
+						{
+							i.src = "21.png"
+							i2.src = "WP2013.png"
+							co.innerHTML = "The western plains of India consist of Rajasthan and parts of Gujarat. The main forests in these areas are tropical thorn. Although there forests dont undergo much evapotranspiration, they are the main source of rainfall in the region.The southwestern summer monsoons originating from the Indian ocean that occur from July through September are drawn towards the Himalayas causing less to none amount of rainfall in the western plains.The total forest cover in the year is 5.34% and the total annual rainfall for the year is 9689 mm. The forest cover has remained same whereas the rainfall has increased. Rainfall is affected very little by the monsoon but the increase could be because of a heavier monsoon. Although, it appears as though many more regions with more forest area have recieved more rainfall as compared to the previous year causing a increase in the corelation coefficient. From the corelation coefficient 0.74 for the year of 2013,we conclude that the degree of linear dependence of forest cover and rainfall in the western plains of India be moderately strong."
+						}
+						else if(b.value == "Northernplains")
+						{
+							i.src = "28.png"
+							i2.src = "NP2013.png"
+							co.innerHTML = "The northern plains consist of the regions of Uttar Pradesh , Haryana, Chandigarh , Delhi and Punjab. The main forests in these regions are tropical dry deciduous and tropical thorn. There forests do not contribute much to rainfall by evapotranspiration and hence the bad corelation. Northern plains receive rains by South West Monsoons. These Monsoons being the branch of Bay of Bengal Monsoon move westwards along the Himalayas.The total average forest cover is 2.71 % whereas the total annual rainfall in the region is 13632.2 mm. The forest area has slightly decreased but the  total rainfall has increased. The corelation coefficient has increased from the previous year. From the corelation coefficient for the year of 2013,0.47,we conclude that the degree of linear dependence of forest cover and rainfall in the northern plains of India is not very strong"
+						}
+						else if(b.value == "Centralhighlands")
+						{
+							i.src = "35.png"
+							i2.src = "CH2013.png"
+							co.innerHTML = "The Central Highlands consist of Madhya Pradesh,parts of Rajasthan and Uttar Pradesh. The main forests are Tropical thorn and Tropical dry decidious which do not contribute much to rainfall by the process of evapotranspiration. The Central Highlands recieve rainfall mainly due to the the South-west monsoon from the Bay of Bengal in the summer and Northeast monsoon in the winter.The total annual rainfall in the Central highlands in the year of 2013 is 21261.4 mm. The percentage of forest cover in the Central highlands in 2012 is 23.33%. The forest cover has decreased by a slight amount but the rainfall has increased.From the correlation coefficient,0.596,for the year of 2013,we concluded that the degree of linear dependence of forest cover and rainfall in the Central highlands of India moderately strong. This is similar to the correlation in 2011 and 2012."
+						}
+						else if(b.value == "Deccanplateau")
+						{
+							i.src = "42.png"
+							i2.src = "DP2013.png"
+							co.innerHTML = "The Deccan Plateau consist of Orissa, Jharkhand,Madhya Pradesh, Gujarat, Maharashtra, Chattisgarh, Andhra Pradesh, Tamil Nadu , Pondicherry, Karanataka and Kerala.The main forests are Tropical Deciduous moist, Moist Tropical Evergreen. These regions also have Tropical dry deciduous and Tropical Thorn.The regions with the former types of forests undergo much evapotranspiration and contribute to th rainfall of the region. Tropical thorn an tropical dry deciduous don't contribute as much. Some parts of the Deccan Plateau recieves lots of rainfalls in the months of June - September from the south west Bay of Bengal monsoon.The total annual rainfall in the Deccan Plateau in the year of 2013 is 89786.3 mm. The percentage of forest cover in the Deccan Plateau in 2013 is 21.91%. The forest area has increased whereas the rainfall has also increased .From the correlation coefficient,0.62,for the year of 2013,we concluded that the degree of linear dependence of forest cover and rainfall in the Deccan Plateau of India is moderately strong similar to the previous year"
+							
+						}
+						else if(b.value == "Coastal")
+						{
+							i.src = "49.png"
+							i2.src = "CO2013.png"
+							co.innerHTML = "The Coastal regions consist of West Bengal, Orissa, Gujarat, Daman and Diu, Maharashtra, Goa, Parts of Tamil Nadu, Karanataka and Kerala.The main forests on the western coast are Moist Tropical Evergreen forests and Wet Temperate. On the eastern coast, we mainly have Tropical Deciduous Moist and Tropical Deciduous dry.These types of forest undergo much evapotranspiration contributing much to the rainfall in the area. The total annual rainfall in the Coastal regions in the year of 2013 is 43964.4 mm. The percentage of forest cover in the Coastal regions in 2013 is 19.67%. The forest cover has slighty increased and so has the rainfall.This could be because of a stronger monsoon. From the correlation coefficient,0.830,for the year of 2013,we concluded that the degree of linear dependence of forest cover and rainfall in the Coastal regions of India is strong. This is similar to the correlation in 2010."
+						}
+						
+						
+					}
+					
+				}
+			</script>
+
+	</body>
+</html>

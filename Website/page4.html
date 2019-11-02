@@ -1,0 +1,504 @@
+<!DOCTYPE HTML>
+<!--
+	Epilogue by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Forest Cover In India</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		
+		
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header" class="alt">
+				<div id="nav-wrapper"> 
+				<!-- Nav -->
+				<nav id="nav">
+					<ul>
+												  	<li><a href = "pred.html">Prediction</a></li>
+
+							<li><a href = "index.html">Home</a></li>
+						
+						<li><a href="maps.html">Maps</a></li>
+						<li class="active"><a href="data.html">Get Data</a></li>
+						<li class="active"><a href="prediction.html">Regression</a></li>
+					</ul>
+				</nav>
+				
+				
+			</div>
+			<p>REPORT<br/>Analysis based on physiographic divisions of India
+			</p>
+			</header>
+
+		<!-- Wrapper -->
+		<div>
+			<div id="leftsidebar">
+						<section>
+							<header>
+								<h2 class="image">Choose YEAR</h2>
+								<form>
+								<select class="dropdown" id = "year" size = "7" style = "position:absolute;height: 200px;width:200px" autofocus>
+								
+								  <option value="2007">2007</option>
+								  <option value="2008">2008</option>
+								  <option value="2009">2009</option>
+								  <option value="2010">2010</option>
+								  <option value="2011">2011</option>
+								  <option value="2012">2012</option>
+								  <option value="2013">2013</option>
+								</select>
+								</form>
+								</form>
+							</header>
+						</section>
+							<section>
+							<header>
+								<h2 class="image">Choose REGION</h2>
+								<form>
+								<select class="dropdown" id = "region" size = "7" style = "position:absolute;height: 200px;width:200px">
+								  <option value="Northernmountains">Northern Mountains</option>
+								  <option value="Easternplains">Eastern Plains</option>
+								  <option value="Westernplains">Western Plains</option>
+								  <option value="Northernplains">Northern Plains</option>
+								  <option value="Centralhighlands">Central Highlands</option>
+								  <option value="Deccanplateau">Deccan Plateau</option>
+								  <option value="Coastal">Coastal</option>
+								</select>
+								</form>
+							</header>
+						</section>						
+							
+			</div>
+			<div>
+			<section class="centrebar">
+						
+						<h2>GRAPH</h2>
+						<img id ="fvstgraphs"src="1tt.png" alt="" />
+						
+			</section>
+			<section class="centrebar">
+						<h2>CORRELATION</h2>
+						<img id ="fvstgraphscor"src= "Yearwise Forestvstemp/2007corel.png" alt="" />
+						
+			</section><br/>
+			<section id="conclu"><p>The correlation coefficient is -0.3 which is negative because increase in forest area decreases the temperature. Trees affect our climate, and therefore our weather, in three primary ways: they lower temperatures, reduce energy usage and reduce or remove air pollutants. Each part of the tree contributes to climate control, from leaves to roots.Leaves help turn down the thermostat. They cool the air through a process called evapotranspiration. Evapotranspiration is the combination of two simultaneous processes: evaporation and transpiration, both of which release moisture into the air.Shade provided by strategically planted deciduous trees cools buildings during the warm months, allows the sun's warming rays to shine through its branches in the winter and also protects buildings from cold winds. Researchers have found that planting one tree to the west and one to the south of a home can significantly reduce energy consumption. Through the process of photosynthesis, trees remove carbon dioxide (a greenhouse gas) and release oxygen into our air. Trees store the carbon dioxide, called carbon sequestration, and -- depending on the size of the tree -- can hold between 35 to 800 pounds of carbon dioxide each year.  Normally, trees help cool the planet by absorbing carbon dioxide as part of the photosynthesis process and by evaporating water into the air. In the tropics, water evaporates naturally from trees, increasing cloud cover and keeping temperatures cooler. "
+</p></section>
+			</div>
+			
+			</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script type = "text/javascript">
+				var a = document.getElementById("year")
+				a.onclick = yearfn
+				var b
+				var i = document.getElementById("fvstgraphs")
+				var i2 = document.getElementById("fvstgraphscor")
+				var t=document.getElementById("conclu");
+				
+				function yearfn()
+				{
+					if(a.value == 2007)
+					{
+						i.src = "1tt.png"
+						i2.src = "Yearwise Forestvstemp/2007corel.png"
+						t.innerHTML="The correlation coefficient is -0.3 which is negative because increase in forest area decreases the temperature. Trees affect our climate, and therefore our weather, in three primary ways: they lower temperatures, reduce energy usage and reduce or remove air pollutants. Each part of the tree contributes to climate control, from leaves to roots.Leaves help turn down the thermostat. They cool the air through a process called evapotranspiration. Evapotranspiration is the combination of two simultaneous processes: evaporation and transpiration, both of which release moisture into the air.Shade provided by strategically planted deciduous trees cools buildings during the warm months, allows the sun's warming rays to shine through its branches in the winter and also protects buildings from cold winds. Researchers have found that planting one tree to the west and one to the south of a home can significantly reduce energy consumption. Through the process of photosynthesis, trees remove carbon dioxide (a greenhouse gas) and release oxygen into our air. Trees store the carbon dioxide, called carbon sequestration, and -- depending on the size of the tree -- can hold between 35 to 800 pounds of carbon dioxide each year.  Normally, trees help cool the planet by absorbing carbon dioxide as part of the photosynthesis process and by evaporating water into the air. In the tropics, water evaporates naturally from trees, increasing cloud cover and keeping temperatures cooler. "
+						
+					}
+					else if(a.value == 2008)
+					{
+						i.src = "2tt.png"
+						i2.src = "Yearwise Forestvstemp/2008corel.png"
+						t.innerHTML="The correlation coefficient is -0.3 which is negative because increase in forest area decreases the temperature. Trees affect our climate, and therefore our weather, in three primary ways: they lower temperatures, reduce energy usage and reduce or remove air pollutants. Each part of the tree contributes to climate control, from leaves to roots.Leaves help turn down the thermostat. They cool the air through a process called evapotranspiration. Evapotranspiration is the combination of two simultaneous processes: evaporation and transpiration, both of which release moisture into the air.Shade provided by strategically planted deciduous trees cools buildings during the warm months, allows the sun's warming rays to shine through its branches in the winter and also protects buildings from cold winds. Researchers have found that planting one tree to the west and one to the south of a home can significantly reduce energy consumption. Through the process of photosynthesis, trees remove carbon dioxide (a greenhouse gas) and release oxygen into our air. Trees store the carbon dioxide, called carbon sequestration, and -- depending on the size of the tree -- can hold between 35 to 800 pounds of carbon dioxide each year.  Normally, trees help cool the planet by absorbing carbon dioxide as part of the photosynthesis process and by evaporating water into the air. In the tropics, water evaporates naturally from trees, increasing cloud cover and keeping temperatures cooler. "
+					}
+					else if(a.value == 2009)
+					{
+						i.src = "3tt.png"
+						i2.src = "Yearwise Forestvstemp/2009corel.png"
+						t.innerHTML="The correlation coefficient is -0.3 which is negative because increase in forest area decreases the temperature. Trees affect our climate, and therefore our weather, in three primary ways: they lower temperatures, reduce energy usage and reduce or remove air pollutants. Each part of the tree contributes to climate control, from leaves to roots.Leaves help turn down the thermostat. They cool the air through a process called evapotranspiration. Evapotranspiration is the combination of two simultaneous processes: evaporation and transpiration, both of which release moisture into the air.Shade provided by strategically planted deciduous trees cools buildings during the warm months, allows the sun's warming rays to shine through its branches in the winter and also protects buildings from cold winds. Researchers have found that planting one tree to the west and one to the south of a home can significantly reduce energy consumption. Through the process of photosynthesis, trees remove carbon dioxide (a greenhouse gas) and release oxygen into our air. Trees store the carbon dioxide, called carbon sequestration, and -- depending on the size of the tree -- can hold between 35 to 800 pounds of carbon dioxide each year.  Normally, trees help cool the planet by absorbing carbon dioxide as part of the photosynthesis process and by evaporating water into the air. In the tropics, water evaporates naturally from trees, increasing cloud cover and keeping temperatures cooler. "
+					}
+					else if(a.value == 2010)
+					{
+						i.src = "4tt.png"
+						i2.src = "Yearwise Forestvstemp/2010corel.png"
+						t.innerHTML="The correlation coefficient is -0.3 which is negative because increase in forest area decreases the temperature. Trees affect our climate, and therefore our weather, in three primary ways: they lower temperatures, reduce energy usage and reduce or remove air pollutants. Each part of the tree contributes to climate control, from leaves to roots.Leaves help turn down the thermostat. They cool the air through a process called evapotranspiration. Evapotranspiration is the combination of two simultaneous processes: evaporation and transpiration, both of which release moisture into the air.Shade provided by strategically planted deciduous trees cools buildings during the warm months, allows the sun's warming rays to shine through its branches in the winter and also protects buildings from cold winds. Researchers have found that planting one tree to the west and one to the south of a home can significantly reduce energy consumption. Through the process of photosynthesis, trees remove carbon dioxide (a greenhouse gas) and release oxygen into our air. Trees store the carbon dioxide, called carbon sequestration, and -- depending on the size of the tree -- can hold between 35 to 800 pounds of carbon dioxide each year.  Normally, trees help cool the planet by absorbing carbon dioxide as part of the photosynthesis process and by evaporating water into the air. In the tropics, water evaporates naturally from trees, increasing cloud cover and keeping temperatures cooler. "
+					}
+					else if(a.value == 2011)
+					{
+						i.src = "5tt.png"
+						i2.src = "Yearwise Forestvstemp/2011corel.png"
+						t.innerHTML="The correlation coefficient is -0.3 which is negative because increase in forest area decreases the temperature. Trees affect our climate, and therefore our weather, in three primary ways: they lower temperatures, reduce energy usage and reduce or remove air pollutants. Each part of the tree contributes to climate control, from leaves to roots.Leaves help turn down the thermostat. They cool the air through a process called evapotranspiration. Evapotranspiration is the combination of two simultaneous processes: evaporation and transpiration, both of which release moisture into the air.Shade provided by strategically planted deciduous trees cools buildings during the warm months, allows the sun's warming rays to shine through its branches in the winter and also protects buildings from cold winds. Researchers have found that planting one tree to the west and one to the south of a home can significantly reduce energy consumption. Through the process of photosynthesis, trees remove carbon dioxide (a greenhouse gas) and release oxygen into our air. Trees store the carbon dioxide, called carbon sequestration, and -- depending on the size of the tree -- can hold between 35 to 800 pounds of carbon dioxide each year.  Normally, trees help cool the planet by absorbing carbon dioxide as part of the photosynthesis process and by evaporating water into the air. In the tropics, water evaporates naturally from trees, increasing cloud cover and keeping temperatures cooler. "
+					}
+					else if(a.value == 2012)
+					{
+						i.src = "6tt.png"
+						i2.src = "Yearwise Forestvstemp/2012corel.png"
+						t.innerHTML="The correlation coefficient is -0.3 which is negative because increase in forest area decreases the temperature. Trees affect our climate, and therefore our weather, in three primary ways: they lower temperatures, reduce energy usage and reduce or remove air pollutants. Each part of the tree contributes to climate control, from leaves to roots.Leaves help turn down the thermostat. They cool the air through a process called evapotranspiration. Evapotranspiration is the combination of two simultaneous processes: evaporation and transpiration, both of which release moisture into the air.Shade provided by strategically planted deciduous trees cools buildings during the warm months, allows the sun's warming rays to shine through its branches in the winter and also protects buildings from cold winds. Researchers have found that planting one tree to the west and one to the south of a home can significantly reduce energy consumption. Through the process of photosynthesis, trees remove carbon dioxide (a greenhouse gas) and release oxygen into our air. Trees store the carbon dioxide, called carbon sequestration, and -- depending on the size of the tree -- can hold between 35 to 800 pounds of carbon dioxide each year.  Normally, trees help cool the planet by absorbing carbon dioxide as part of the photosynthesis process and by evaporating water into the air. In the tropics, water evaporates naturally from trees, increasing cloud cover and keeping temperatures cooler. "
+					}
+					else if(a.value == 2013)
+					{
+						i.src = "7tt.png"
+						i2.src = "Yearwise Forestvstemp/2013corel.png"
+						t.innerHTML="The correlation coefficient is -0.3 which is negative because increase in forest area decreases the temperature. Trees affect our climate, and therefore our weather, in three primary ways: they lower temperatures, reduce energy usage and reduce or remove air pollutants. Each part of the tree contributes to climate control, from leaves to roots.Leaves help turn down the thermostat. They cool the air through a process called evapotranspiration. Evapotranspiration is the combination of two simultaneous processes: evaporation and transpiration, both of which release moisture into the air.Shade provided by strategically planted deciduous trees cools buildings during the warm months, allows the sun's warming rays to shine through its branches in the winter and also protects buildings from cold winds. Researchers have found that planting one tree to the west and one to the south of a home can significantly reduce energy consumption. Through the process of photosynthesis, trees remove carbon dioxide (a greenhouse gas) and release oxygen into our air. Trees store the carbon dioxide, called carbon sequestration, and -- depending on the size of the tree -- can hold between 35 to 800 pounds of carbon dioxide each year.  Normally, trees help cool the planet by absorbing carbon dioxide as part of the photosynthesis process and by evaporating water into the air. In the tropics, water evaporates naturally from trees, increasing cloud cover and keeping temperatures cooler. "
+						
+					}
+					b = document.getElementById("region")
+					b.onclick = regionfn
+				}
+				function regionfn()
+				{
+					if(a.value == 2007)
+					{
+
+						if(b.value == "Northernmountains")
+						{
+							i.src = "1t.png"
+							i2.src = "NM2007t.png"
+							t.innerHTML="Northern Mountain span over the following states  Jammu & Kashmir, Himachal Pradesh, Uttarakhand, Sikkim, Arunachal Pradesh, Assam and West Bengal.The forest types include the Dodonea scrub, the subtropical dry evergreen forests of Olea cuspidata, the northern dry mixed deciduous forests, the dry Siwalik sal (Shorea robusta) forests, the moist mixed deciduous forests, the northern tropical semi-evergreen forests, and the northern tropical wet evergreen forests.As we can see the correlation coefficient for temperature vs Forest is very small close to 0.1 which means that increase in forest area doesnt affect the temperature. This is mostly because the climate conditions vary depending on elevation and location, even within the Himalayas. And the  the trees have adapted to the cool climate, heavy downpours and intense sunshine. The needle like leaves in coniferour trees found there dont allow much water to be transpired through them, Hence theres not much cooling effect experienced. http://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1436&context=agronomyfacpub" ;
+						}
+						else if(b.value == "Easternplains")
+						{
+							i.src = "8t.png"
+							i2.src = "EP2007t.png"
+							t.innerHTML=" The eastern part of the Indo Gangetic Plain consists of the Ganga–Brahmaputra drainage basin. These encompass parts of bihar and west Bengal. Cities include Patna, Bhagalpur, Asansol, Kolkata, Dibrugarh, Guwahati and Jorhat. Part of the world's largest mangrove forest, the Sundarbans, is located in southern West Bengal.  However, above an elevation of 1,000 metres (3,300 ft), the forest becomes predominantly subtropical. In Darjeeling, which is above 1,500 metres (4,900 ft), temperate-forest trees such as oaks, conifers, and rhododendrons predominate. The Correlation coefficient here is negative and really significant - 0.9. This implies where Forests are more in percentage temperatures are less. With some planning, urban trees can help minimize the heat island effect that saddles many cities.Heat islands are cities that are often several degrees warmer than the suburbs because the urban areas generate and trap heat. When trees grow throughout urban areas, both surface and air temperatures are reduced. Trees evaporatranspire water causing a cooling effect to occur. ";
+						}
+						else if(b.value == "Westernplains")
+						{
+							i.src = "15t.png"
+							i2.src = "WP2007t.png"
+							t.innerHTML=" The Western Plains encompases regions of Rajasthan and Gujarat.This area comes under the  dry deciduous forests ecoregion, with tropical dry broadleaf forests that include teak, Acacia, and other trees. The correlation coefficient is -0.25 which is not very significant. But a negative correlation coefficient  means cooler climates is linked to increase in growth of forest.The broadleaf forests are capable of transpiring more water and hence cause a cooling effect to occur. Trees also act as carbon reservoirs, felling them would release a lot of carbondioxide which is a heat trapping gas."
+						}
+						else if(b.value == "Northernplains")
+						{
+							i.src = "22t.png"
+							i2.src = "NP2007t.png"
+							t.innerHTML="The Northern India Plain, fertile plain encompassing most of northern  India. Cities include Ludhiana, Chandigarh, Bathinda, Amritsar, Ambala, Panipat, Faridabad, Delhi,  Meerut, Agra, Kanpur, Lucknow, Allahabad, Varanasi.The Upper Gangetic Plains moist deciduous forests is a tropical moist broadleaf forest ecoregion.The correlation coefficient 0.22 is not very significant. A reason for why this number is positive could be that in Northern Plains Smog occurs. Photochemical smog is smog caused when sunlight and chemical compounds such as car exhaust combine. Trees contribute to this when they release organic gases.Additionally, planting trees as a solution to global warming -- a practice commonly linked to carbon offsets -- may have a positive impact on global temperature control only when planted in the tropics, a thin geographical belt around the equator.."
+						}
+						else if(b.value == "Centralhighlands")
+						{
+							i.src = "29t.png"
+							i2.src = "CH2007t.png"
+							t.innerHTML="The Central Highlands in India are composed of two main plateaus, namely the Malwa plateau, Chota Nagpur Plateau. The Malwa Plateau is located in Rajasthan, Madhya Pradesh and Gujarat. The Chota Nagpur Plateau is located in eastern India and is one of the central highlands in India, covering much of the Indian state Jharkhand and adjacent parts of Orissa, Bihar and Chhattisgarh. Vegetation in the Malwa Plateau is tropical dry forest, with scattered teak (Tectona grandis) forests. The other main trees are Butea, Bombax, Anogeissus, Acacia, Buchanania and Boswellia. The shrubs or small trees include species of Grewia, Ziziphus mauritiana, Casearia, Prosopis, Capparis, Woodfordia, Phyllanthus, and Carissa. The chota nagpur plateau is covered with a variety tropical and subtropical dry broadleaf forests of which Sal forest is predominant.The correlation coefficient is -0.528 which is significant. And it explains that increase in forest cover reduces temperature. The trees cool the air through a process called evapotranspiration. Shade provided by strategically planted deciduous trees cools buildings during the warm months, allows the sun's warming rays to shine through its branches in the winter and also protects buildings from cold winds."
+						}
+						else if(b.value == "Deccanplateau")
+						{
+							i.src = "36t.png"
+							i2.src = "DP2007t.png"
+							t.innerHTML="The Deccan Plateau is a large triangular plateau, surrounded by the Vindhyas to the north and flanked by the Eastern and Western Ghats. The South Deccan Plateau dry deciduous forests is a dry broadleaf forest ecoregion of southern India. The correlation coefficient is not at all significant 0.09 hence we can say that theres almost no relationship between forest cover and temperature in the Deccan Plateau.The plateau's forests are moist deciduous, dry deciduous, and tropical thorn. The changing colors of tree leaves is one of the most notable features of deciduous forests, as when the temperatures start to cool in the fall, the trees will basically suck the chlorophyll out of their leaves to store for use during the colder and darker winter months. Milder winters will typically promote a larger diversity among tree species. A reason for why this number is faintly positive could be that forests trap heat because their dense, dark canopies absorb sunlight. "
+						}
+						else if(b.value == "Coastal")
+						{
+							i.src = "43t.png"
+							i2.src = "CO2007t.png"
+							t.innerHTML="The country has two coastal lines.The Eastern Coastal Plains refer to a wide stretch of landmass of India, lying between the Eastern Ghats and the Bay of Bengal. It is wider and leveled than the western coastal plains and stretches from Tamil Nadu in the south to West Bengal in the north through Andhra Pradesh and Odisha. The Western Coastal Plains is a thin strip of coastal plain 50 kilometres in width between the west coast of India and the Western Ghats hills, which starts near the south of river Tapi. They are bodied between the Western Ghats and the Arabian Sea. The plains begin at Gujarat in the north and end at Kerala in the south. Types of Forest found here are Tropical moist Evergreen (Western coasts , Assam and West Bengal) ,Tropical dry Evergreen  (Tamil Nadu) , Mangrove (both East and West coasts). The correlation coefficient -0.77 is a very good number to certify that there exist a relationship between the forest cover and the temperature in coastal regions. As the forest area incireases temperature decreases.The trees cool the air through a process called evapotranspiration. Shade provided by strategically planted deciduous trees cools buildings during the warm months, allows the sun's warming rays to shine through its branches in the winter and also protects buildings from cold winds. "
+						}
+						
+						
+					}
+					else if(a.value == 2008)
+					{
+				
+						if(b.value == "Northernmountains")
+						{
+							i.src = "2t.png"
+							i2.src = "NM2008t.png"
+							t.innerHTML="Northern Mountain span over the following states  Jammu & Kashmir, Himachal Pradesh, Uttarakhand, Sikkim, Arunachal Pradesh, Assam and West Bengal.The forest types include the Dodonea scrub, the subtropical dry evergreen forests of Olea cuspidata, the northern dry mixed deciduous forests, the dry Siwalik sal (Shorea robusta) forests, the moist mixed deciduous forests, the northern tropical semi-evergreen forests, and the northern tropical wet evergreen forests.As we can see the correlation coefficient for temperature vs Forest is very small close to -0.0947 which means that increase in forest area doesnt affect the temperature. This is mostly because the climate conditions vary depending on elevation and location, even within the Himalayas. And the  the trees have adapted to the cool climate, heavy downpours and intense sunshine. The needle like leaves in coniferour trees found there dont allow much water to be transpired through them, Hence theres not much cooling effect experienced. http://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1436&context=agronomyfacpub" ;
+						}
+						else if(b.value == "Easternplains")
+						{
+							i.src = "9t.png"
+							i2.src = "EP2008t.png"
+							t.innerHTML=" The eastern part of the Indo Gangetic Plain consists of the Ganga–Brahmaputra drainage basin. These encompass parts of bihar and west Bengal. Cities include Patna, Bhagalpur, Asansol, Kolkata, Dibrugarh, Guwahati and Jorhat. Part of the world's largest mangrove forest, the Sundarbans, is located in southern West Bengal.  However, above an elevation of 1,000 metres (3,300 ft), the forest becomes predominantly subtropical. In Darjeeling, which is above 1,500 metres (4,900 ft), temperate-forest trees such as oaks, conifers, and rhododendrons predominate. The Correlation coefficient here is negative and really significant - 0.912. This implies where Forests are more in percentage temperatures are less. With some planning, urban trees can help minimize the heat island effect that saddles many cities.Heat islands are cities that are often several degrees warmer than the suburbs because the urban areas generate and trap heat. When trees grow throughout urban areas, both surface and air temperatures are reduced. Trees evaporatranspire water causing a cooling effect to occur. ";
+							
+						}
+						else if(b.value == "Westernplains")
+						{
+							i.src = "16t.png"
+							i2.src = "WP2008t.png"
+							t.innerHTML=" The Western Plains encompases regions of Rajasthan and Gujarat.This area comes under the  dry deciduous forests ecoregion, with tropical dry broadleaf forests that include teak, Acacia, and other trees. The correlation coefficient is -0.38 which is not very significant. But a negative correlation coefficient  means cooler climates is linked to increase in growth of forest.The broadleaf forests are capable of transpiring more water and hence cause a cooling effect to occur. Trees also act as carbon reservoirs, felling them would release a lot of carbondioxide which is a heat trapping gas."
+						}
+						else if(b.value == "Northernplains")
+						{
+							i.src = "23t.png"
+							i2.src = "NP2008t.png"
+							t.innerHTML="The Northern India Plain, fertile plain encompassing most of northern  India. Cities include Ludhiana, Chandigarh, Bathinda, Amritsar, Ambala, Panipat, Faridabad, Delhi,  Meerut, Agra, Kanpur, Lucknow, Allahabad, Varanasi.The Upper Gangetic Plains moist deciduous forests is a tropical moist broadleaf forest ecoregion.The correlation coefficient 0.412 slightly significant. A reason for why this number is positive could be that in Northern Plains Smog occurs. Photochemical smog is smog caused when sunlight and chemical compounds such as car exhaust combine. Trees contribute to this when they release organic gases.Additionally, planting trees as a solution to global warming -- a practice commonly linked to carbon offsets -- may have a positive impact on global temperature control only when planted in the tropics, a thin geographical belt around the equator.."
+						}
+						else if(b.value == "Centralhighlands")
+						{
+							i.src = "30t.png"
+							i2.src = "CH2008t.png"
+							.innerHTML="The Central Highlands in India are composed of two main plateaus, namely the Malwa plateau, Chota Nagpur Plateau. The Malwa Plateau is located in Rajasthan, Madhya Pradesh and Gujarat. The Chota Nagpur Plateau is located in eastern India and is one of the central highlands in India, covering much of the Indian state Jharkhand and adjacent parts of Orissa, Bihar and Chhattisgarh. Vegetation in the Malwa Plateau is tropical dry forest, with scattered teak (Tectona grandis) forests. The other main trees are Butea, Bombax, Anogeissus, Acacia, Buchanania and Boswellia. The shrubs or small trees include species of Grewia, Ziziphus mauritiana, Casearia, Prosopis, Capparis, Woodfordia, Phyllanthus, and Carissa. The chota nagpur plateau is covered with a variety tropical and subtropical dry broadleaf forests of which Sal forest is predominant.The correlation coefficient is -0.375 which is slightly significant. And it explains that increase in forest cover reduces temperature. The trees cool the air through a process called evapotranspiration. Shade provided by strategically planted deciduous trees cools buildings during the warm months, allows the sun's warming rays to shine through its branches in the winter and also protects buildings from cold winds."
+						}
+						else if(b.value == "Deccanplateau")
+						{
+							i.src = "37t.png"
+							i2.src = "DP2008t.png"
+							t.innerHTML="The Deccan Plateau is a large triangular plateau, surrounded by the Vindhyas to the north and flanked by the Eastern and Western Ghats. The South Deccan Plateau dry deciduous forests is a dry broadleaf forest ecoregion of southern India. The correlation coefficient is not at all significant 0.0977 hence we can say that theres almost no relationship between forest cover and temperature in the Deccan Plateau.The plateau's forests are moist deciduous, dry deciduous, and tropical thorn. The changing colors of tree leaves is one of the most notable features of deciduous forests, as when the temperatures start to cool in the fall, the trees will basically suck the chlorophyll out of their leaves to store for use during the colder and darker winter months. Milder winters will typically promote a larger diversity among tree species. A reason for why this number is faintly positive could be that forests trap heat because their dense, dark canopies absorb sunlight. "
+						}
+						else if(b.value == "Coastal")
+						{
+							i.src = "44t.png"
+							i2.src = "CO2008t.png"
+							t.innerHTML="The country has two coastal lines.The Eastern Coastal Plains refer to a wide stretch of landmass of India, lying between the Eastern Ghats and the Bay of Bengal. It is wider and leveled than the western coastal plains and stretches from Tamil Nadu in the south to West Bengal in the north through Andhra Pradesh and Odisha. The Western Coastal Plains is a thin strip of coastal plain 50 kilometres in width between the west coast of India and the Western Ghats hills, which starts near the south of river Tapi. They are bodied between the Western Ghats and the Arabian Sea. The plains begin at Gujarat in the north and end at Kerala in the south. Types of Forest found here are Tropical moist Evergreen (Western coasts , Assam and West Bengal) ,Tropical dry Evergreen  (Tamil Nadu) , Mangrove (both East and West coasts). The correlation coefficient -0.611 is a very good number to certify that there exist a relationship between the forest cover and the temperature in coastal regions. As the forest area incireases temperature decreases.The trees cool the air through a process called evapotranspiration. Shade provided by strategically planted deciduous trees cools buildings during the warm months, allows the sun's warming rays to shine through its branches in the winter and also protects buildings from cold winds. "
+							
+						}
+						
+						
+					}
+					else if(a.value == 2009)
+					{
+						
+						if(b.value == "Northernmountains")
+						{
+							i.src = "3t.png"
+							i2.src = "NM2009t.png"
+							t.innerHTML="Northern Mountain span over the following states  Jammu & Kashmir, Himachal Pradesh, Uttarakhand, Sikkim, Arunachal Pradesh, Assam and West Bengal.The forest types include the Dodonea scrub, the subtropical dry evergreen forests of Olea cuspidata, the northern dry mixed deciduous forests, the dry Siwalik sal (Shorea robusta) forests, the moist mixed deciduous forests, the northern tropical semi-evergreen forests, and the northern tropical wet evergreen forests.As we can see the correlation coefficient for temperature vs Forest is -0.216 which means that increase in forest area decrease the temperature. The number is not very significant. This is mostly because the climate conditions vary depending on elevation and location, even within the Himalayas. And the  the trees have adapted to the cool climate, heavy downpours and intense sunshine. The needle like leaves in coniferour trees found there dont allow much water to be transpired through them, Hence theres not much cooling effect experienced. http://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1436&context=agronomyfacpub" ;
+						}
+						else if(b.value == "Easternplains")
+						{
+							i.src = "10t.png"
+							i2.src = "EP2009t.png"
+							t.innerHTML=" The eastern part of the Indo Gangetic Plain consists of the Ganga–Brahmaputra drainage basin. These encompass parts of bihar and west Bengal. Cities include Patna, Bhagalpur, Asansol, Kolkata, Dibrugarh, Guwahati and Jorhat. Part of the world's largest mangrove forest, the Sundarbans, is located in southern West Bengal.  However, above an elevation of 1,000 metres (3,300 ft), the forest becomes predominantly subtropical. In Darjeeling, which is above 1,500 metres (4,900 ft), temperate-forest trees such as oaks, conifers, and rhododendrons predominate. The Correlation coefficient here is negative and really significant - 0.907. This implies where Forests are more in percentage temperatures are less. With some planning, urban trees can help minimize the heat island effect that saddles many cities.Heat islands are cities that are often several degrees warmer than the suburbs because the urban areas generate and trap heat. When trees grow throughout urban areas, both surface and air temperatures are reduced. Trees evaporatranspire water causing a cooling effect to occur. ";
+						}
+						else if(b.value == "Westernplains")
+						{
+							i.src = "17t.png"
+							i2.src = "WP2009t.png"
+							t.innerHTML=" The Western Plains encompases regions of Rajasthan and Gujarat.This area comes under the  dry deciduous forests ecoregion, with tropical dry broadleaf forests that include teak, Acacia, and other trees. The correlation coefficient is -0.45 which is significant. A negative correlation coefficient  means cooler climates is linked to increase in growth of forest.The broadleaf forests are capable of transpiring more water and hence cause a cooling effect to occur. Trees also act as carbon reservoirs, felling them would release a lot of carbondioxide which is a heat trapping gas."
+						}
+						else if(b.value == "Northernplains")
+						{
+							i.src = "24t.png"
+							i2.src = "NP2009t.png"
+							t.innerHTML="The Northern India Plain, fertile plain encompassing most of northern  India. Cities include Ludhiana, Chandigarh, Bathinda, Amritsar, Ambala, Panipat, Faridabad, Delhi,  Meerut, Agra, Kanpur, Lucknow, Allahabad, Varanasi.The Upper Gangetic Plains moist deciduous forests is a tropical moist broadleaf forest ecoregion.The correlation coefficient 0.234 is not very significant. A reason for why this number is positive could be that in Northern Plains Smog occurs. Photochemical smog is smog caused when sunlight and chemical compounds such as car exhaust combine. Trees contribute to this when they release organic gases.Additionally, planting trees as a solution to global warming -- a practice commonly linked to carbon offsets -- may have a positive impact on global temperature control only when planted in the tropics, a thin geographical belt around the equator.."
+						}
+						else if(b.value == "Centralhighlands")
+						{
+							i.src = "31t.png"
+							i2.src = "CH2009t.png"
+							.innerHTML="The Central Highlands in India are composed of two main plateaus, namely the Malwa plateau, Chota Nagpur Plateau. The Malwa Plateau is located in Rajasthan, Madhya Pradesh and Gujarat. The Chota Nagpur Plateau is located in eastern India and is one of the central highlands in India, covering much of the Indian state Jharkhand and adjacent parts of Orissa, Bihar and Chhattisgarh. Vegetation in the Malwa Plateau is tropical dry forest, with scattered teak (Tectona grandis) forests. The other main trees are Butea, Bombax, Anogeissus, Acacia, Buchanania and Boswellia. The shrubs or small trees include species of Grewia, Ziziphus mauritiana, Casearia, Prosopis, Capparis, Woodfordia, Phyllanthus, and Carissa. The chota nagpur plateau is covered with a variety tropical and subtropical dry broadleaf forests of which Sal forest is predominant.The correlation coefficient is -0.51 which is significant. And it explains that increase in forest cover reduces temperature. The trees cool the air through a process called evapotranspiration. Shade provided by strategically planted deciduous trees cools buildings during the warm months, allows the sun's warming rays to shine through its branches in the winter and also protects buildings from cold winds."
+						}
+						else if(b.value == "Deccanplateau")
+						{
+							i.src = "38t.png"
+							i2.src = "DP2009t.png"
+							t.innerHTML="The Deccan Plateau is a large triangular plateau, surrounded by the Vindhyas to the north and flanked by the Eastern and Western Ghats. The South Deccan Plateau dry deciduous forests is a dry broadleaf forest ecoregion of southern India. The correlation coefficient is not at all significant 0.067 hence we can say that theres almost no relationship between forest cover and temperature in the Deccan Plateau.The plateau's forests are moist deciduous, dry deciduous, and tropical thorn. The changing colors of tree leaves is one of the most notable features of deciduous forests, as when the temperatures start to cool in the fall, the trees will basically suck the chlorophyll out of their leaves to store for use during the colder and darker winter months. Milder winters will typically promote a larger diversity among tree species. A reason for why this number is faintly positive could be that forests trap heat because their dense, dark canopies absorb sunlight. "
+						}
+						else if(b.value == "Coastal")
+						{
+							i.src = "45t.png"
+							i2.src = "CO2009t.png"
+							t.innerHTML="The country has two coastal lines.The Eastern Coastal Plains refer to a wide stretch of landmass of India, lying between the Eastern Ghats and the Bay of Bengal. It is wider and leveled than the western coastal plains and stretches from Tamil Nadu in the south to West Bengal in the north through Andhra Pradesh and Odisha. The Western Coastal Plains is a thin strip of coastal plain 50 kilometres in width between the west coast of India and the Western Ghats hills, which starts near the south of river Tapi. They are bodied between the Western Ghats and the Arabian Sea. The plains begin at Gujarat in the north and end at Kerala in the south. Types of Forest found here are Tropical moist Evergreen (Western coasts , Assam and West Bengal) ,Tropical dry Evergreen  (Tamil Nadu) , Mangrove (both East and West coasts). The correlation coefficient -0.711 is a very good number to certify that there exist a relationship between the forest cover and the temperature in coastal regions. As the forest area incireases temperature decreases.The trees cool the air through a process called evapotranspiration. Shade provided by strategically planted deciduous trees cools buildings during the warm months, allows the sun's warming rays to shine through its branches in the winter and also protects buildings from cold winds. "
+						}
+						
+						
+					}
+					else if(a.value == 2010)
+					{
+					
+						if(b.value == "Northernmountains")
+						{
+							i.src = "4t.png"
+							i2.src = "NM2010t.png"
+							t.innerHTML="Northern Mountain span over the following states  Jammu & Kashmir, Himachal Pradesh, Uttarakhand, Sikkim, Arunachal Pradesh, Assam and West Bengal.The forest types include the Dodonea scrub, the subtropical dry evergreen forests of Olea cuspidata, the northern dry mixed deciduous forests, the dry Siwalik sal (Shorea robusta) forests, the moist mixed deciduous forests, the northern tropical semi-evergreen forests, and the northern tropical wet evergreen forests.As we can see the correlation coefficient for temperature vs Forest is very small close to -0.08 which means that increase in forest area doesnt affect the temperature much. This is mostly because the climate conditions vary depending on elevation and location, even within the Himalayas. And the  the trees have adapted to the cool climate, heavy downpours and intense sunshine. The needle like leaves in coniferour trees found there dont allow much water to be transpired through them, Hence theres not much cooling effect experienced. http://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1436&context=agronomyfacpub" ;
+						}
+						else if(b.value == "Easternplains")
+						{
+							i.src = "11t.png"
+							i2.src = "EP2010t.png"
+							t.innerHTML=" The eastern part of the Indo Gangetic Plain consists of the Ganga–Brahmaputra drainage basin. These encompass parts of bihar and west Bengal. Cities include Patna, Bhagalpur, Asansol, Kolkata, Dibrugarh, Guwahati and Jorhat. Part of the world's largest mangrove forest, the Sundarbans, is located in southern West Bengal.  However, above an elevation of 1,000 metres (3,300 ft), the forest becomes predominantly subtropical. In Darjeeling, which is above 1,500 metres (4,900 ft), temperate-forest trees such as oaks, conifers, and rhododendrons predominate. The Correlation coefficient here is negative and really significant - 0.921. This implies where Forests are more in percentage temperatures are less. With some planning, urban trees can help minimize the heat island effect that saddles many cities.Heat islands are cities that are often several degrees warmer than the suburbs because the urban areas generate and trap heat. When trees grow throughout urban areas, both surface and air temperatures are reduced. Trees evaporatranspire water causing a cooling effect to occur. ";
+						}
+						else if(b.value == "Westernplains")
+						{
+							i.src = "18t.png"
+							i2.src = "WP2010t.png"
+							t.innerHTML=" The Western Plains encompases regions of Rajasthan and Gujarat.This area comes under the  dry deciduous forests ecoregion, with tropical dry broadleaf forests that include teak, Acacia, and other trees. The correlation coefficient is -0.405 which is  significant. A negative correlation coefficient  means cooler climates is linked to increase in growth of forest.The broadleaf forests are capable of transpiring more water and hence cause a cooling effect to occur. Trees also act as carbon reservoirs, felling them would release a lot of carbondioxide which is a heat trapping gas."
+						}
+						else if(b.value == "Northernplains")
+						{
+							i.src = "25t.png"
+							i2.src = "NP2010t.png"
+							t.innerHTML="The Northern India Plain, fertile plain encompassing most of northern  India. Cities include Ludhiana, Chandigarh, Bathinda, Amritsar, Ambala, Panipat, Faridabad, Delhi,  Meerut, Agra, Kanpur, Lucknow, Allahabad, Varanasi.The Upper Gangetic Plains moist deciduous forests is a tropical moist broadleaf forest ecoregion.The correlation coefficient 0.218 is not very significant. A reason for why this number is positive could be that in Northern Plains Smog occurs. Photochemical smog is smog caused when sunlight and chemical compounds such as car exhaust combine. Trees contribute to this when they release organic gases.Additionally, planting trees as a solution to global warming -- a practice commonly linked to carbon offsets -- may have a positive impact on global temperature control only when planted in the tropics, a thin geographical belt around the equator.."
+						}
+						else if(b.value == "Centralhighlands")
+						{
+							i.src = "32t.png"
+							i2.src = "CH2010t.png"
+							t.innerHTML="The Central Highlands in India are composed of two main plateaus, namely the Malwa plateau, Chota Nagpur Plateau. The Malwa Plateau is located in Rajasthan, Madhya Pradesh and Gujarat. The Chota Nagpur Plateau is located in eastern India and is one of the central highlands in India, covering much of the Indian state Jharkhand and adjacent parts of Orissa, Bihar and Chhattisgarh. Vegetation in the Malwa Plateau is tropical dry forest, with scattered teak (Tectona grandis) forests. The other main trees are Butea, Bombax, Anogeissus, Acacia, Buchanania and Boswellia. The shrubs or small trees include species of Grewia, Ziziphus mauritiana, Casearia, Prosopis, Capparis, Woodfordia, Phyllanthus, and Carissa. The chota nagpur plateau is covered with a variety tropical and subtropical dry broadleaf forests of which Sal forest is predominant.The correlation coefficient is -0.476 which is significant. And it explains that increase in forest cover reduces temperature. The trees cool the air through a process called evapotranspiration. Shade provided by strategically planted deciduous trees cools buildings during the warm months, allows the sun's warming rays to shine through its branches in the winter and also protects buildings from cold winds."
+						}
+						else if(b.value == "Deccanplateau")
+						{
+							i.src = "39t.png"
+							i2.src = "DP2010t.png"
+							t.innerHTML="The Deccan Plateau is a large triangular plateau, surrounded by the Vindhyas to the north and flanked by the Eastern and Western Ghats. The South Deccan Plateau dry deciduous forests is a dry broadleaf forest ecoregion of southern India. The correlation coefficient is not at all significant 0.093 hence we can say that theres almost no relationship between forest cover and temperature in the Deccan Plateau.The plateau's forests are moist deciduous, dry deciduous, and tropical thorn. The changing colors of tree leaves is one of the most notable features of deciduous forests, as when the temperatures start to cool in the fall, the trees will basically suck the chlorophyll out of their leaves to store for use during the colder and darker winter months. Milder winters will typically promote a larger diversity among tree species. A reason for why this number is faintly positive could be that forests trap heat because their dense, dark canopies absorb sunlight. "
+						}
+						else if(b.value == "Coastal")
+						{
+							i.src = "46t.png"
+							i2.src = "CO2010t.png"
+							t.innerHTML="The country has two coastal lines.The Eastern Coastal Plains refer to a wide stretch of landmass of India, lying between the Eastern Ghats and the Bay of Bengal. It is wider and leveled than the western coastal plains and stretches from Tamil Nadu in the south to West Bengal in the north through Andhra Pradesh and Odisha. The Western Coastal Plains is a thin strip of coastal plain 50 kilometres in width between the west coast of India and the Western Ghats hills, which starts near the south of river Tapi. They are bodied between the Western Ghats and the Arabian Sea. The plains begin at Gujarat in the north and end at Kerala in the south. Types of Forest found here are Tropical moist Evergreen (Western coasts , Assam and West Bengal) ,Tropical dry Evergreen  (Tamil Nadu) , Mangrove (both East and West coasts). The correlation coefficient -0.7416 is a very good number to certify that there exist a relationship between the forest cover and the temperature in coastal regions. As the forest area incireases temperature decreases.The trees cool the air through a process called evapotranspiration. Shade provided by strategically planted deciduous trees cools buildings during the warm months, allows the sun's warming rays to shine through its branches in the winter and also protects buildings from cold winds. "
+						}
+						
+						
+					}
+					else if(a.value == 2011)
+					{
+					
+						if(b.value == "Northernmountains")
+						{
+							i.src = "5t.png"
+							i2.src = "NM2011t.png"
+							t.innerHTML="Northern Mountain span over the following states  Jammu & Kashmir, Himachal Pradesh, Uttarakhand, Sikkim, Arunachal Pradesh, Assam and West Bengal.The forest types include the Dodonea scrub, the subtropical dry evergreen forests of Olea cuspidata, the northern dry mixed deciduous forests, the dry Siwalik sal (Shorea robusta) forests, the moist mixed deciduous forests, the northern tropical semi-evergreen forests, and the northern tropical wet evergreen forests.As we can see the correlation coefficient for temperature vs Forest is very small close to -0.103 which means that increase in forest area doesnt affect the temperature. This is mostly because the climate conditions vary depending on elevation and location, even within the Himalayas. And the  the trees have adapted to the cool climate, heavy downpours and intense sunshine. The needle like leaves in coniferour trees found there dont allow much water to be transpired through them, Hence theres not much cooling effect experienced. http://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1436&context=agronomyfacpub" ;
+						}
+						else if(b.value == "Easternplains")
+						{
+							i.src = "12t.png"
+							i2.src = "EP2011t.png"
+							t.innerHTML=" The eastern part of the Indo Gangetic Plain consists of the Ganga–Brahmaputra drainage basin. These encompass parts of bihar and west Bengal. Cities include Patna, Bhagalpur, Asansol, Kolkata, Dibrugarh, Guwahati and Jorhat. Part of the world's largest mangrove forest, the Sundarbans, is located in southern West Bengal.  However, above an elevation of 1,000 metres (3,300 ft), the forest becomes predominantly subtropical. In Darjeeling, which is above 1,500 metres (4,900 ft), temperate-forest trees such as oaks, conifers, and rhododendrons predominate. The Correlation coefficient here is negative and really significant - 0.929. This implies where Forests are more in percentage temperatures are less. With some planning, urban trees can help minimize the heat island effect that saddles many cities.Heat islands are cities that are often several degrees warmer than the suburbs because the urban areas generate and trap heat. When trees grow throughout urban areas, both surface and air temperatures are reduced. Trees evaporatranspire water causing a cooling effect to occur. ";
+						}
+						else if(b.value == "Westernplains")
+						{
+							i.src = "19t.png"
+							i2.src = "WP2011t.png"
+							t.innerHTML=" The Western Plains encompases regions of Rajasthan and Gujarat.This area comes under the  dry deciduous forests ecoregion, with tropical dry broadleaf forests that include teak, Acacia, and other trees. The correlation coefficient is -0.67 which is a significant number. A negative correlation coefficient  means cooler climates is linked to increase in growth of forest.The broadleaf forests are capable of transpiring more water and hence cause a cooling effect to occur. Trees also act as carbon reservoirs, felling them would release a lot of carbondioxide which is a heat trapping gas."
+						}
+						else if(b.value == "Northernplains")
+						{
+							i.src = "26t.png"
+							i2.src = "NP2011t.png"
+							t.innerHTML="The Northern India Plain, fertile plain encompassing most of northern  India. Cities include Ludhiana, Chandigarh, Bathinda, Amritsar, Ambala, Panipat, Faridabad, Delhi,  Meerut, Agra, Kanpur, Lucknow, Allahabad, Varanasi.The Upper Gangetic Plains moist deciduous forests is a tropical moist broadleaf forest ecoregion.The correlation coefficient 0.18 is not very significant. A reason for why this number is positive could be that in Northern Plains Smog occurs. Photochemical smog is smog caused when sunlight and chemical compounds such as car exhaust combine. Trees contribute to this when they release organic gases.Additionally, planting trees as a solution to global warming -- a practice commonly linked to carbon offsets -- may have a positive impact on global temperature control only when planted in the tropics, a thin geographical belt around the equator.."
+						}
+						else if(b.value == "Centralhighlands")
+						{
+							i.src = "33t.png"
+							i2.src = "CH2011t.png"
+							.innerHTML="The Central Highlands in India are composed of two main plateaus, namely the Malwa plateau, Chota Nagpur Plateau. The Malwa Plateau is located in Rajasthan, Madhya Pradesh and Gujarat. The Chota Nagpur Plateau is located in eastern India and is one of the central highlands in India, covering much of the Indian state Jharkhand and adjacent parts of Orissa, Bihar and Chhattisgarh. Vegetation in the Malwa Plateau is tropical dry forest, with scattered teak (Tectona grandis) forests. The other main trees are Butea, Bombax, Anogeissus, Acacia, Buchanania and Boswellia. The shrubs or small trees include species of Grewia, Ziziphus mauritiana, Casearia, Prosopis, Capparis, Woodfordia, Phyllanthus, and Carissa. The chota nagpur plateau is covered with a variety tropical and subtropical dry broadleaf forests of which Sal forest is predominant.The correlation coefficient is -0.27 which is not very significant. But the negative sign explains that increase in forest cover reduces temperature. The trees cool the air through a process called evapotranspiration. Shade provided by strategically planted deciduous trees cools buildings during the warm months, allows the sun's warming rays to shine through its branches in the winter and also protects buildings from cold winds."
+						}
+						else if(b.value == "Deccanplateau")
+						{
+							i.src = "40t.png"
+							i2.src = "DP2011t.png"
+							t.innerHTML="The Deccan Plateau is a large triangular plateau, surrounded by the Vindhyas to the north and flanked by the Eastern and Western Ghats. The South Deccan Plateau dry deciduous forests is a dry broadleaf forest ecoregion of southern India. The correlation coefficient is not at all significant 0.035 hence we can say that theres almost no relationship between forest cover and temperature in the Deccan Plateau.The plateau's forests are moist deciduous, dry deciduous, and tropical thorn. The changing colors of tree leaves is one of the most notable features of deciduous forests, as when the temperatures start to cool in the fall, the trees will basically suck the chlorophyll out of their leaves to store for use during the colder and darker winter months. Milder winters will typically promote a larger diversity among tree species. A reason for why this number is faintly positive could be that forests trap heat because their dense, dark canopies absorb sunlight. "
+						}
+						else if(b.value == "Coastal")
+						{
+							i.src = "47t.png"
+							i2.src = "CO2011t.png"
+							t.innerHTML="The country has two coastal lines.The Eastern Coastal Plains refer to a wide stretch of landmass of India, lying between the Eastern Ghats and the Bay of Bengal. It is wider and leveled than the western coastal plains and stretches from Tamil Nadu in the south to West Bengal in the north through Andhra Pradesh and Odisha. The Western Coastal Plains is a thin strip of coastal plain 50 kilometres in width between the west coast of India and the Western Ghats hills, which starts near the south of river Tapi. They are bodied between the Western Ghats and the Arabian Sea. The plains begin at Gujarat in the north and end at Kerala in the south. Types of Forest found here are Tropical moist Evergreen (Western coasts , Assam and West Bengal) ,Tropical dry Evergreen  (Tamil Nadu) , Mangrove (both East and West coasts). The correlation coefficient -0.61 is a very good number to certify that there exist a relationship between the forest cover and the temperature in coastal regions. As the forest area incireases temperature decreases.The trees cool the air through a process called evapotranspiration. Shade provided by strategically planted deciduous trees cools buildings during the warm months, allows the sun's warming rays to shine through its branches in the winter and also protects buildings from cold winds. "
+						}
+						
+						
+					}
+					else if(a.value == 2012)
+					{
+					
+						if(b.value == "Northernmountains")
+						{
+							i.src = "6t.png"
+							i2.src = "NM2012t.png"
+							t.innerHTML="Northern Mountain span over the following states  Jammu & Kashmir, Himachal Pradesh, Uttarakhand, Sikkim, Arunachal Pradesh, Assam and West Bengal.The forest types include the Dodonea scrub, the subtropical dry evergreen forests of Olea cuspidata, the northern dry mixed deciduous forests, the dry Siwalik sal (Shorea robusta) forests, the moist mixed deciduous forests, the northern tropical semi-evergreen forests, and the northern tropical wet evergreen forests.As we can see the correlation coefficient for temperature vs Forest is very small close to -0.098 which means that increase in forest area doesnt affect the temperature. This is mostly because the climate conditions vary depending on elevation and location, even within the Himalayas. And the  the trees have adapted to the cool climate, heavy downpours and intense sunshine. The needle like leaves in coniferour trees found there dont allow much water to be transpired through them, Hence theres not much cooling effect experienced. http://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1436&context=agronomyfacpub" ;
+						}
+						else if(b.value == "Easternplains")
+						{
+							i.src == "13t.png"
+							i2.src = "EP2012t.png"
+							t.innerHTML=" The eastern part of the Indo Gangetic Plain consists of the Ganga–Brahmaputra drainage basin. These encompass parts of bihar and west Bengal. Cities include Patna, Bhagalpur, Asansol, Kolkata, Dibrugarh, Guwahati and Jorhat. Part of the world's largest mangrove forest, the Sundarbans, is located in southern West Bengal.  However, above an elevation of 1,000 metres (3,300 ft), the forest becomes predominantly subtropical. In Darjeeling, which is above 1,500 metres (4,900 ft), temperate-forest trees such as oaks, conifers, and rhododendrons predominate. The Correlation coefficient here is negative and really significant - 0.924. This implies where Forests are more in percentage temperatures are less. With some planning, urban trees can help minimize the heat island effect that saddles many cities.Heat islands are cities that are often several degrees warmer than the suburbs because the urban areas generate and trap heat. When trees grow throughout urban areas, both surface and air temperatures are reduced. Trees evaporatranspire water causing a cooling effect to occur. ";
+						}
+						else if(b.value == "Westernplains")
+						{
+							i.src = "20t.png"
+							i2.src = "WP2012t.png"
+							t.innerHTML=" The Western Plains encompases regions of Rajasthan and Gujarat.This area comes under the  dry deciduous forests ecoregion, with tropical dry broadleaf forests that include teak, Acacia, and other trees. The correlation coefficient is -0.791 which is pretty significant. A negative correlation coefficient  means cooler climates is linked to increase in growth of forest.The broadleaf forests are capable of transpiring more water and hence cause a cooling effect to occur. Trees also act as carbon reservoirs, felling them would release a lot of carbondioxide which is a heat trapping gas."
+						}
+						else if(b.value == "Northernplains")
+						{
+							i.src = "27t.png"
+							i2.src = "NP2012t.png"
+							t.innerHTML="The Northern India Plain, fertile plain encompassing most of northern  India. Cities include Ludhiana, Chandigarh, Bathinda, Amritsar, Ambala, Panipat, Faridabad, Delhi,  Meerut, Agra, Kanpur, Lucknow, Allahabad, Varanasi.The Upper Gangetic Plains moist deciduous forests is a tropical moist broadleaf forest ecoregion.The correlation coefficient 0.218 is not very significant. A reason for why this number is positive could be that in Northern Plains Smog occurs. Photochemical smog is smog caused when sunlight and chemical compounds such as car exhaust combine. Trees contribute to this when they release organic gases.Additionally, planting trees as a solution to global warming -- a practice commonly linked to carbon offsets -- may have a positive impact on global temperature control only when planted in the tropics, a thin geographical belt around the equator.."
+						}
+						else if(b.value == "Centralhighlands")
+						{
+							i.src = "34t.png"
+							i2.src = "CH2012t.png"
+							.innerHTML="The Central Highlands in India are composed of two main plateaus, namely the Malwa plateau, Chota Nagpur Plateau. The Malwa Plateau is located in Rajasthan, Madhya Pradesh and Gujarat. The Chota Nagpur Plateau is located in eastern India and is one of the central highlands in India, covering much of the Indian state Jharkhand and adjacent parts of Orissa, Bihar and Chhattisgarh. Vegetation in the Malwa Plateau is tropical dry forest, with scattered teak (Tectona grandis) forests. The other main trees are Butea, Bombax, Anogeissus, Acacia, Buchanania and Boswellia. The shrubs or small trees include species of Grewia, Ziziphus mauritiana, Casearia, Prosopis, Capparis, Woodfordia, Phyllanthus, and Carissa. The chota nagpur plateau is covered with a variety tropical and subtropical dry broadleaf forests of which Sal forest is predominant.The correlation coefficient is -0.282 which is not very significant. The negative sign explains that increase in forest cover reduces temperature. The trees cool the air through a process called evapotranspiration. Shade provided by strategically planted deciduous trees cools buildings during the warm months, allows the sun's warming rays to shine through its branches in the winter and also protects buildings from cold winds."
+						}
+						else if(b.value == "Deccanplateau")
+						{
+							i.src = "41t.png"
+							i2.src = "DP2012t.png"
+							t.innerHTML="The Deccan Plateau is a large triangular plateau, surrounded by the Vindhyas to the north and flanked by the Eastern and Western Ghats. The South Deccan Plateau dry deciduous forests is a dry broadleaf forest ecoregion of southern India. The correlation coefficient is not at all significant 0.027 hence we can say that theres almost no relationship between forest cover and temperature in the Deccan Plateau.The plateau's forests are moist deciduous, dry deciduous, and tropical thorn. The changing colors of tree leaves is one of the most notable features of deciduous forests, as when the temperatures start to cool in the fall, the trees will basically suck the chlorophyll out of their leaves to store for use during the colder and darker winter months. Milder winters will typically promote a larger diversity among tree species. A reason for why this number is faintly positive could be that forests trap heat because their dense, dark canopies absorb sunlight. "
+						}
+						else if(b.value == "Coastal")
+						{
+							i.src = "48t.png"
+							i2.src = "CO2012t.png"
+							t.innerHTML="The country has two coastal lines.The Eastern Coastal Plains refer to a wide stretch of landmass of India, lying between the Eastern Ghats and the Bay of Bengal. It is wider and leveled than the western coastal plains and stretches from Tamil Nadu in the south to West Bengal in the north through Andhra Pradesh and Odisha. The Western Coastal Plains is a thin strip of coastal plain 50 kilometres in width between the west coast of India and the Western Ghats hills, which starts near the south of river Tapi. They are bodied between the Western Ghats and the Arabian Sea. The plains begin at Gujarat in the north and end at Kerala in the south. Types of Forest found here are Tropical moist Evergreen (Western coasts , Assam and West Bengal) ,Tropical dry Evergreen  (Tamil Nadu) , Mangrove (both East and West coasts). The correlation coefficient -0.58 is a very good number to certify that there exist a relationship between the forest cover and the temperature in coastal regions. As the forest area incireases temperature decreases.The trees cool the air through a process called evapotranspiration. Shade provided by strategically planted deciduous trees cools buildings during the warm months, allows the sun's warming rays to shine through its branches in the winter and also protects buildings from cold winds. "
+						}
+						
+						
+					}
+					else if(a.value == 2013)
+					{
+
+						if(b.value == "Northernmountains")
+						{
+							i.src = "7t.png"
+							i2.src = "NM2013t.png"
+							t.innerHTML="Northern Mountain span over the following states  Jammu & Kashmir, Himachal Pradesh, Uttarakhand, Sikkim, Arunachal Pradesh, Assam and West Bengal.The forest types include the Dodonea scrub, the subtropical dry evergreen forests of Olea cuspidata, the northern dry mixed deciduous forests, the dry Siwalik sal (Shorea robusta) forests, the moist mixed deciduous forests, the northern tropical semi-evergreen forests, and the northern tropical wet evergreen forests.As we can see the correlation coefficient for temperature vs Forest is very small close to -0.11 which means that increase in forest area doesnt affect the temperature. This is mostly because the climate conditions vary depending on elevation and location, even within the Himalayas. And the  the trees have adapted to the cool climate, heavy downpours and intense sunshine. The needle like leaves in coniferour trees found there dont allow much water to be transpired through them, Hence theres not much cooling effect experienced. http://digitalcommons.unl.edu/cgi/viewcontent.cgi?article=1436&context=agronomyfacpub" ;
+							
+						}
+						else if(b.value == "Easternplains")
+						{
+							i.src = "14t.png"
+							i2.src = "EP2013t.png"
+							t.innerHTML=" The eastern part of the Indo Gangetic Plain consists of the Ganga–Brahmaputra drainage basin. These encompass parts of bihar and west Bengal. Cities include Patna, Bhagalpur, Asansol, Kolkata, Dibrugarh, Guwahati and Jorhat. Part of the world's largest mangrove forest, the Sundarbans, is located in southern West Bengal.  However, above an elevation of 1,000 metres (3,300 ft), the forest becomes predominantly subtropical. In Darjeeling, which is above 1,500 metres (4,900 ft), temperate-forest trees such as oaks, conifers, and rhododendrons predominate. The Correlation coefficient here is negative and really significant - 0.93. This implies where Forests are more in percentage temperatures are less. With some planning, urban trees can help minimize the heat island effect that saddles many cities.Heat islands are cities that are often several degrees warmer than the suburbs because the urban areas generate and trap heat. When trees grow throughout urban areas, both surface and air temperatures are reduced. Trees evaporatranspire water causing a cooling effect to occur. ";
+						}
+						else if(b.value == "Westernplains")
+						{
+							i.src = "21t.png"
+							i2.src = "WP2013t.png"
+							t.innerHTML=" The Western Plains encompases regions of Rajasthan and Gujarat.This area comes under the  dry deciduous forests ecoregion, with tropical dry broadleaf forests that include teak, Acacia, and other trees. The correlation coefficient is -0.855 which is really significant. A negative correlation coefficient  means cooler climates is linked to increase in growth of forest.The broadleaf forests are capable of transpiring more water and hence cause a cooling effect to occur. Trees also act as carbon reservoirs, felling them would release a lot of carbondioxide which is a heat trapping gas."
+						}
+						else if(b.value == "Northernplains")
+						{
+							i.src = "28t.png"
+							i2.src = "NP2013t.png"
+							t.innerHTML="The Northern India Plain, fertile plain encompassing most of northern  India. Cities include Ludhiana, Chandigarh, Bathinda, Amritsar, Ambala, Panipat, Faridabad, Delhi,  Meerut, Agra, Kanpur, Lucknow, Allahabad, Varanasi.The Upper Gangetic Plains moist deciduous forests is a tropical moist broadleaf forest ecoregion.The correlation coefficient 0.198 is not very significant. A reason for why this number is positive could be that in Northern Plains Smog occurs. Photochemical smog is smog caused when sunlight and chemical compounds such as car exhaust combine. Trees contribute to this when they release organic gases.Additionally, planting trees as a solution to global warming -- a practice commonly linked to carbon offsets -- may have a positive impact on global temperature control only when planted in the tropics, a thin geographical belt around the equator.."
+						}
+						else if(b.value == "Centralhighlands")
+						{
+							i.src = "35t.png"
+							i2.src = "CH2013t.png"
+							.innerHTML="The Central Highlands in India are composed of two main plateaus, namely the Malwa plateau, Chota Nagpur Plateau. The Malwa Plateau is located in Rajasthan, Madhya Pradesh and Gujarat. The Chota Nagpur Plateau is located in eastern India and is one of the central highlands in India, covering much of the Indian state Jharkhand and adjacent parts of Orissa, Bihar and Chhattisgarh. Vegetation in the Malwa Plateau is tropical dry forest, with scattered teak (Tectona grandis) forests. The other main trees are Butea, Bombax, Anogeissus, Acacia, Buchanania and Boswellia. The shrubs or small trees include species of Grewia, Ziziphus mauritiana, Casearia, Prosopis, Capparis, Woodfordia, Phyllanthus, and Carissa. The chota nagpur plateau is covered with a variety tropical and subtropical dry broadleaf forests of which Sal forest is predominant.The correlation coefficient is -0.409 which is significant. And it explains that increase in forest cover reduces temperature. The trees cool the air through a process called evapotranspiration. Shade provided by strategically planted deciduous trees cools buildings during the warm months, allows the sun's warming rays to shine through its branches in the winter and also protects buildings from cold winds."
+						}
+						else if(b.value == "Deccanplateau")
+						{
+							i.src = "42t.png"
+							i2.src = "DP2013t.png"
+							t.innerHTML="The Deccan Plateau is a large triangular plateau, surrounded by the Vindhyas to the north and flanked by the Eastern and Western Ghats. The South Deccan Plateau dry deciduous forests is a dry broadleaf forest ecoregion of southern India. The correlation coefficient is not at all significant 0.017 hence we can say that theres almost no relationship between forest cover and temperature in the Deccan Plateau.The plateau's forests are moist deciduous, dry deciduous, and tropical thorn. The changing colors of tree leaves is one of the most notable features of deciduous forests, as when the temperatures start to cool in the fall, the trees will basically suck the chlorophyll out of their leaves to store for use during the colder and darker winter months. Milder winters will typically promote a larger diversity among tree species. A reason for why this number is faintly positive could be that forests trap heat because their dense, dark canopies absorb sunlight. "
+						}
+						else if(b.value == "Coastal")
+						{
+							i.src = "49t.png"
+							i2.src = "CO2013t.png"
+							t.innerHTML="The country has two coastal lines.The Eastern Coastal Plains refer to a wide stretch of landmass of India, lying between the Eastern Ghats and the Bay of Bengal. It is wider and leveled than the western coastal plains and stretches from Tamil Nadu in the south to West Bengal in the north through Andhra Pradesh and Odisha. The Western Coastal Plains is a thin strip of coastal plain 50 kilometres in width between the west coast of India and the Western Ghats hills, which starts near the south of river Tapi. They are bodied between the Western Ghats and the Arabian Sea. The plains begin at Gujarat in the north and end at Kerala in the south. Types of Forest found here are Tropical moist Evergreen (Western coasts , Assam and West Bengal) ,Tropical dry Evergreen  (Tamil Nadu) , Mangrove (both East and West coasts). The correlation coefficient -0.65 is a very good number to certify that there exist a relationship between the forest cover and the temperature in coastal regions. As the forest area incireases temperature decreases.The trees cool the air through a process called evapotranspiration. Shade provided by strategically planted deciduous trees cools buildings during the warm months, allows the sun's warming rays to shine through its branches in the winter and also protects buildings from cold winds. "
+						}
+						
+						
+					}
+					
+				}
+			</script>
+
+	</body>
+</html>
